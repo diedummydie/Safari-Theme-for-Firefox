@@ -40,7 +40,7 @@ spacer {
 }
 
 tab {
-    background-image: linear-gradient(#ffffff00,#00000011)!important
+    background-image: linear-gradient(#ffffff00,#00000011)!important;
 }
 
 tab:hover {
@@ -51,11 +51,6 @@ tab:-moz-window-inactive {
     background-image: none!important;
     background-color: var(--lwt-accent-color-inactive)!important;
     color: var(--panel-disabled-color)!important
-}
-
-.tab-content {
-    margin-top: -1px;
-    border-bottom: none!important
 }
 
 .tab-background,.tabbrowser-tab {
@@ -151,10 +146,6 @@ tab:-moz-window-inactive {
     border: 0!important
 }
 
-.scrollbutton-down image,.scrollbutton-up image {
-    transform: scale(.48)!important
-}
-
 #urlbar .urlbar-input-box,.searchbar-textbox>moz-input-box,tab .tab-icon {
     opacity: .9!important
 }
@@ -181,7 +172,9 @@ tab:-moz-window-inactive {
 
 .tabbrowser-tab .tab-close-button {
     -moz-box-ordinal-group: 0!important;
-    margin: 0 4px 0 -6px!important;
+    margin: 0px 6px 0px -4px!important;
+    width: 16px;
+    height: 16px;
     display: none!important
 }
 
@@ -190,7 +183,7 @@ tab:-moz-window-inactive {
 }
 
 .tab-icon-image,.tab-throbber {
-    margin-left: -4px
+    margin-left: -4px;
 }
 
 .tabbrowser-tab:not([pinned=true]):hover .tab-icon-image,.tabbrowser-tab:not([pinned=true]):hover .tab-throbber {
@@ -199,21 +192,13 @@ tab:-moz-window-inactive {
 
 .tabbrowser-tab:not([pinned=true]):hover .tab-close-button {
     display: -moz-box!important;
-    width: 20px
 }
 
 .tab-icon-image:-moz-window-inactive {
     opacity: .2!important
 }
 
-image[aria-label="Reload page"] .path {
-    fill: #ff4500!important;
-    background-color: #00f!important;
-    color: red!important
-}
-
 .widget-overflow-list .chromeclass-toolbar-additional image {
-    filter: grayscale(100%) contrast(100%);
     max-width: 16px!important;
     max-height: 16px!important
 }
