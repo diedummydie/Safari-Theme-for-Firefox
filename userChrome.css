@@ -6,7 +6,7 @@
 /* https://github.com/MrOtherGuy/firefox-csshacks */
 @import "chrome/window_control_placeholder_support.css";
 @import "chrome/Fx65_tabs_on_bottom.css";
-@import "chrome/hide_tabs_with_one_tab.css";
+@import "chrome/hide_tabs_with_one_tab.css"; /* broken */
 
 
 #appcontent tabbrowser,#content,#tabbrowser-tabpanels,
@@ -216,4 +216,16 @@ tab:-moz-window-inactive {
 
 .browserContainer>findbar {
     -moz-box-ordinal-group: 0;
+}
+
+#new-tab-button,#alltabs-button {
+    border-top: 1px solid var(--tabs-border-color)!important;
+    border-left: 1px solid var(--tabs-border-color)!important
+}
+
+#new-tab-button .toolbarbutton-icon,#alltabs-button .toolbarbutton-badge-stack {
+    border-radius: 0!important;
+    padding: 4!important;
+    width:24px!important;
+    background-color: inherit!important
 }
