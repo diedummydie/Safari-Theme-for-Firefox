@@ -1,9 +1,5 @@
-/* Safari-Theme-for-Firefox
+/* Safari Theme for Firefox
  * https://github.com/diedummydie/Safari-Theme-for-Firefox
- * Segments with links are released according to the
- * license of original creator. Segments not otherwise
- * specified are free and unencumbered code 
- * released into the public domain.
  */
 
 
@@ -100,7 +96,8 @@ tab:-moz-window-inactive {
     fill-opacity: .25!important
 }
 
-#main-window :-moz-any(#back-button, #forward-button) .toolbarbutton-badge-stack,#main-window :-moz-any(#back-button, #forward-button) .toolbarbutton-icon {
+#main-window :-moz-any(#back-button, #forward-button) .toolbarbutton-badge-stack,
+#main-window :-moz-any(#back-button, #forward-button) .toolbarbutton-icon {
     padding: 3px 5px!important;
     margin-left: 0!important;
     margin-right: 0!important;
@@ -116,18 +113,26 @@ tab:-moz-window-inactive {
     transform: scaleX(-1) !important;
 }
 
-#main-window #forward-button .toolbarbutton-badge-stack,#main-window #forward-button .toolbarbutton-icon {
-    /* direction swapped because of scale(-x) */
+#main-window #forward-button .toolbarbutton-badge-stack,
+#main-window #forward-button .toolbarbutton-icon {
     margin-left: 4px!important;
     margin-right: -3px!important
 }
 
-#PanelUI-menu-button:-moz-window-inactive>.toolbarbutton-badge-stack,#PanelUI-menu-button:-moz-window-inactive>.toolbarbutton-badge-stack:hover,#downloads-button:-moz-window-inactive>.toolbarbutton-badge-stack,#downloads-button:-moz-window-inactive>.toolbarbutton-badge-stack:hover,#main-window:not([customizing]) .toolbarbutton-1:-moz-window-inactive[disabled=true],#nav-bar:-moz-window-inactive toolbarbutton>.toolbarbutton-icon,#nav-bar:-moz-window-inactive toolbarbutton>.toolbarbutton-icon:hover,.toolbarbutton-1:not(:hover):-moz-window-inactive {
+#PanelUI-menu-button:-moz-window-inactive>.toolbarbutton-badge-stack,
+#PanelUI-menu-button:-moz-window-inactive>.toolbarbutton-badge-stack:hover,
+#downloads-button:-moz-window-inactive>.toolbarbutton-badge-stack,
+#downloads-button:-moz-window-inactive>.toolbarbutton-badge-stack:hover,
+#main-window:not([customizing]) .toolbarbutton-1:-moz-window-inactive[disabled=true],
+#nav-bar:-moz-window-inactive toolbarbutton>.toolbarbutton-icon,
+#nav-bar:-moz-window-inactive toolbarbutton>.toolbarbutton-icon:hover,
+.toolbarbutton-1:not(:hover):-moz-window-inactive {
     opacity: .6!important;
-    fill: gray!important
 }
 
-.arrowscrollbox-overflow-end-indicator,.arrowscrollbox-overflow-start-indicator,.scrollbutton-down,.scrollbutton-up,.tab-drop-indicator-box .tab-drop-indicator,.tab-drop-indicator-box image {
+.arrowscrollbox-overflow-end-indicator,.arrowscrollbox-overflow-start-indicator,
+.scrollbutton-down,.scrollbutton-up,.tab-drop-indicator-box .tab-drop-indicator,
+.tab-drop-indicator-box image {
     visibility: collapse;
     min-width: 20px;
     max-width: 20px;
@@ -140,13 +145,14 @@ tab:-moz-window-inactive {
     border-right: 1px solid var(--tabs-border-color)!important
 }
 
-.arrowscrollbox-overflow-end-indicator,.arrowscrollbox-overflow-start-indicator,.tab-drop-indicator-box image {
+.arrowscrollbox-overflow-end-indicator,
+.arrowscrollbox-overflow-start-indicator,
+.tab-drop-indicator-box image {
     display: none!important;
     visibility: collapse!important;
-    border: 0!important
 }
 
-#urlbar .urlbar-input-box,.searchbar-textbox>moz-input-box,tab .tab-icon {
+#urlbar .urlbar-input-box,.searchbar-textbox>moz-input-box {
     opacity: .9!important
 }
 
@@ -162,7 +168,7 @@ tab:-moz-window-inactive {
 
 .tabbrowser-tab {
     border-top: 1px solid var(--tabs-border-color)!important;
-    border-bottom: 1px solid var(--tabs-border-color)!important
+    border-bottom: 0px solid var(--tabs-border-color)!important
 }
 
 .tabbrowser-tab:-moz-window-inactive {
@@ -172,7 +178,7 @@ tab:-moz-window-inactive {
 
 .tabbrowser-tab .tab-close-button {
     -moz-box-ordinal-group: 0!important;
-    margin: 0px 6px 0px -4px!important;
+    margin: 2px 6px 0px -4px!important;
     width: 16px;
     height: 16px;
     display: none!important
@@ -186,7 +192,8 @@ tab:-moz-window-inactive {
     margin-left: -4px;
 }
 
-.tabbrowser-tab:not([pinned=true]):hover .tab-icon-image,.tabbrowser-tab:not([pinned=true]):hover .tab-throbber {
+.tabbrowser-tab:not([pinned=true]):hover .tab-icon-image,
+.tabbrowser-tab:not([pinned=true]):hover .tab-throbber {
     display: none
 }
 
@@ -195,7 +202,11 @@ tab:-moz-window-inactive {
 }
 
 .tab-icon-image:-moz-window-inactive {
-    opacity: .2!important
+    opacity: .1!important
+}
+
+.tab-label-container {
+    margin-left: -2px
 }
 
 .widget-overflow-list .chromeclass-toolbar-additional image {
@@ -203,36 +214,6 @@ tab:-moz-window-inactive {
     max-height: 16px!important
 }
 
-#PlacesToolbar .toolbarbutton-icon[label]:not([label=""]),#PlacesToolbar .toolbarbutton-icon[type=menu] {
-    filter: grayscale(100%) contrast(100%)!important;
-    margin-inline-end: 0!important
-}
-
-#identity-box~:hover,#tracking-protection-icon-container:hover,#tracking-protection-icon-container~:hover,#urlbar-input-container:focus-within>*,#urlbar:focus-within>*,.searchbar-textbox:focus-within>*,.searchbar-textbox:hover>* {
-    opacity: 1
-}
-
-#identity-box>#identity-icon-labels {
-    transition: max-width 150ms linear!important
-}
-
-#identity-box:not(:hover)>#identity-icon-labels {
-    max-width: 0!important
-}
-
 .browserContainer>findbar {
     -moz-box-ordinal-group: 0;
-    position: fixed!important;
-    right: 1em;
-    border: 1px solid threedshadow!important;
-    border-top: none!important;
-    box-shadow: none!important;
-    background-image: none!important
-}
-
-.findbar-closebutton {
-    margin-inline-start: .5em!important;
-    vertical-align: middle!important;
-    margin-bottom: .25em!important;
-    height: inherit!important
 }
