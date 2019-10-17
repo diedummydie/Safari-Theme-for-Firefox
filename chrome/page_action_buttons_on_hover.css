@@ -1,0 +1,14 @@
+/* Page action-buttons "slide in" when cursor is on top of them and don't reserve space when not used */
+
+#page-action-buttons > *[class^=urlbar-icon]{
+  margin-inline-end: -26px;
+  opacity: 0;
+  transition: margin-inline-end 200ms linear, opacity 200ms linear;
+}
+:root[uidensity="compact"] #page-action-buttons > *[class^=urlbar-icon]{ margin-inline-end: -22px; }
+#page-action-buttons:hover > *[class^=urlbar-icon],
+#page-action-buttons > *[class^=urlbar-icon][open],
+#page-action-buttons > *[class^=urlbar-icon][open] ~ *[class^=urlbar-icon]{
+  opacity: 1;
+  margin-inline-end: 0px !important;
+}

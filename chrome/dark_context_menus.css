@@ -1,0 +1,58 @@
+/* Makes context menus dark */
+/* Uses dark theme colors but does not respect dark theme variables (they wouldn't work on sidebar context menu) */
+
+:root{
+  --uc-menu-bkgnd: rgb(74,74,79);
+  --uc-menu-color: rgb(230,230,230);
+  --uc-menu-dimmed: rgba(255,255,255,0.1);
+  --uc-menu-disabled: rgb(50,50,50);
+}
+
+panel richlistbox,
+panel tree,
+panel button,
+panel menulist,
+panel textbox,
+menupopup,
+menu,
+menuitem{ -moz-appearance: none !important; }
+
+menulist,
+menuitem,
+menu{ min-height: 1.8em }
+
+panel menulist{ border: 1px solid transparent }
+
+panel richlistbox,
+panel tree,
+panel button,
+panel menulist,
+panel textbox,
+menupopup:not(#BMB_bookmarksPopup),
+#main-menubar > menu > menupopup,
+#context-navigation{
+  color: var(--uc-menu-color) !important;
+  padding: 2px;
+  background-color: var(--uc-menu-bkgnd) !important;
+  border-color: var(--uc-menu-disabled) !important;
+}
+
+panel menulist:hover, panel menulist[open]{ border-color: Highlight !important; }
+
+#editBMPanel_folderMenuList > menupopup > menuitem{ color: var(--uc-menu-color) !important; }
+
+panel treechildren::-moz-tree-row(selected),
+panel button:hover,
+menu:hover,
+menu[_moz-menuactive],
+menu[open],
+menuitem:hover,
+menuitem[_moz-menuactive]{
+  background-color: var(--uc-menu-dimmed) !important;
+  color: inherit !important;
+}
+
+menu[disabled="true"],
+menuitem[disabled="true"]{ color: var(--uc-menu-disabled) !important; }
+
+menu:not(.subviewbutton) > .menu-right{ filter: invert(1) }

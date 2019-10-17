@@ -1,0 +1,448 @@
+/*
+@import "window_control_placeholder_support.css";
+@import "tabs_on_bottom.css";
+@import "like_safari.css";
+@import "Isaac-Newt-userChromeSafari.css"
+@import "ASAPHAANING.css"
+@import "ASAP-av-color.css";
+@import "ronilaukkarinen-userChrome-safaristyle.css"
+@import "ronilaukkarinen-userChrome.css"
+@import "Zonnev.css"
+@import "tabs_on_bottom_av.css";
+@import "chrome/combined_favicon_and_tab_close_button.css";
+@import "chrome/floating_findbar_on_top.css";
+*/
+
+
+
+@import "chrome/window_control_placeholder_support.css";
+@import "chrome/Fx65_tabs_on_bottom.css";
+@import "chrome/hide_tabs_with_one_tab.css";
+
+
+/*
+@import "extension_icons_monochrome.css";
+@import "minimal_text_fields.css";
+@import "ASAP-av-color.css";
+*/
+
+#browser vbox#appcontent tabbrowser, 
+#content, 
+#tabbrowser-tabpanels, 
+browser[type=content-primary], 
+browser[type=content] > html { 
+    background: none !important; 
+    background-color: var(--toolbar-bgcolor) !important; 
+}
+
+spacer {
+    visibility: hidden !important;
+}
+
+.titlebar-buttonbox-container {
+  top: 0px !important;
+}
+ 
+#nav-bar {
+  background-image: linear-gradient(#ffffff01,#0000001d) !important;
+  margin-left: -82px;
+  margin-right: -16px;
+  border-top: 1px solid var(--lwt-toolbar-vertical-separator); /* tone down app highlight */
+} #nav-bar:-moz-window-inactive {
+    background-image: none !important; 
+    background-color: var(--lwt-accent-color-inactive) !important;
+}
+
+tab {
+  background-image: linear-gradient(#ffffff00,#00000011) !important;
+    
+} tab:hover {
+  background-image: linear-gradient(#ffffff00, #00000012) !important;
+} tab:-moz-window-inactive {
+    background-image: none !important; 
+    background-color: var(--lwt-accent-color-inactive) !important;
+    color: var(--panel-disabled-color) !important;
+}
+
+.tab-content {
+    margin-top: -2px;
+    border-bottom: none !important;
+}
+
+/* this does nothing */
+.tab-background,
+.tabbrowser-tab {
+    box-shadow: none !important;
+    outline: none !important;
+    box-sizing: border-box !important;
+    border-bottom: none !important;
+}
+
+
+
+
+
+
+/*
+#urlbar:-moz-window-inactive {
+    background: rgb(64,64,64) !important;
+    box-shadow: inset 0px 1px 0px rgb(76,76,76) !important;
+}:-moz-window-inactive
+==================================+*/
+
+
+
+
+#urlbar {
+    background-image: linear-gradient(#ffffff06, #00000000) !important;
+    box-shadow: inset 0px 1px 0px ffffff2a !important;
+    min-height: 22px !important;
+    height: 24px !important;
+    margin-top: 3px !important;
+    margin-bottom: 3px !important;
+    box-sizing: border-box;
+    border: 1px #3b3b3b44 solid !important;
+    border-bottom: 1px #37373744 solid !important;
+}
+#urlbar:-moz-window-inactive {
+  opacity: 0.5 !important;
+}
+
+
+#nav-bar toolbarbutton > .toolbarbutton-icon,
+#nav-bar .toolbarbutton-badge-stack {
+    background-image: linear-gradient(#ffffff04, #ffffff00) !important;
+    background-color: var(--lwt-toolbar-field-background-color, hsla(0,0%,100%,1)) !important;
+    box-shadow: inset 0px 1px 0px #ffffff22 !important;
+    padding: 3px 10px 3px 10px !important;
+    margin-left: 2px !important;
+    margin-right: 2px !important;
+    height: 24px !important;
+    width: 39px !important;
+    border-radius: 5px !important;
+    opacity: 1 !important;
+    background-clip: padding-box;
+    border: 1px #47474720 solid !important;
+    border-bottom: 1px #4444443a solid !important;
+}
+/* when disabled, dim button's label/icon but not the button */
+.tabbrowser-arrowscrollbox > .scrollbutton-up[disabled="true"], 
+.tabbrowser-arrowscrollbox > .scrollbutton-down[disabled="true"], 
+:root:not([customizing]) .toolbarbutton-1[disabled="true"], 
+#nav-bar-overflow-button[disabled="true"], 
+#PanelUI-menu-button[disabled="true"],
+#urlbar * {
+	opacity: 1 !important;
+    fill-opacity: 0.25 !important;
+}
+#main-window :-moz-any(#back-button, #forward-button) .toolbarbutton-icon,
+#main-window :-moz-any(#back-button, #forward-button) .toolbarbutton-badge-stack {
+    padding: 3px 5px 3px 5px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    width: 27px !important;
+}
+#main-window #forward-button .toolbarbutton-icon,
+#main-window #forward-button .toolbarbutton-badge-stack {
+    /* direction swapped because of scale(-x) */
+    margin-left: 4px !important;
+    margin-right: -3px !important;
+}
+
+/* Dim toolbar buttons when app loses focus */
+.toolbarbutton-1:not(:hover):-moz-window-inactive, 
+#main-window:not([customizing]) .toolbarbutton-1:-moz-window-inactive[disabled="true"],
+#nav-bar:-moz-window-inactive toolbarbutton > .toolbarbutton-icon,
+#PanelUI-menu-button:-moz-window-inactive > .toolbarbutton-badge-stack,
+#downloads-button:-moz-window-inactive > .toolbarbutton-badge-stack,
+#nav-bar:-moz-window-inactive toolbarbutton > .toolbarbutton-icon:hover,
+#PanelUI-menu-button:-moz-window-inactive > .toolbarbutton-badge-stack:hover,
+#downloads-button:-moz-window-inactive > .toolbarbutton-badge-stack:hover {
+    opacity: 0.6 !important;
+    fill: rgb(128,128,128) !important;
+}
+
+#downloads-button {
+    margin-right: 0px !important;
+} #downloads-button > .toolbarbutton-badge-stack {
+    max-width: 36px !important;
+    min-width: 36px !important;
+    display: -webkit-box !important;
+} #downloads-indicator-anchor {
+    margin-top: -2px !important;
+    transform: scale(0.88) !important;
+    margin-left: -2px !important;
+}
+
+
+#main-window :-moz-any(#new-tab-button, #alltabs-button) .toolbarbutton-icon,
+#new-tab-button, #alltabs-button, #alltabs-button .toolbarbutton-badge-stack
+{
+    min-width:  24px !important;
+    max-width:  24px !important;
+    min-height: 25px !important;
+    max-height: 25px !important;
+    border-radius: 0px !important;
+    padding: 0px;
+}
+#main-window :-moz-any(#new-tab-button, #alltabs-button)  {
+    border-top: 1px solid var(--tabs-border-color) !important;
+}
+    
+
+#TabsToolbar {
+    min-height: 24 px !important;
+    max-height: 24 px !important;
+}
+
+#titlebar-buttonbox-container:-moz-window-inactive {
+    opacity: 0.5 !important; /*does nothing?*/
+}
+
+#back-button {
+	list-style-image: url("chrome://browser/skin/arrow-left.svg")  !important;
+} #forward-button {
+	list-style-image: url("chrome://browser/skin/arrow-left.svg")  !important;
+    transform: scaleX(-1) !important;
+}
+
+/* this does nothing? */
+.tabbrowser-arrowscrollbox > .scrollbutton-up[disabled="true"], 
+.tabbrowser-arrowscrollbox > .scrollbutton-down[disabled="true"], 
+.tabbrowser-arrowscrollbox > .scrollbutton-up[disabled="false"], 
+.tabbrowser-arrowscrollbox > .scrollbutton-down[disabled="false"], 
+:root:not([customizing]) .toolbarbutton-1[disabled="true"], 
+#nav-bar-overflow-button[disabled="true"], 
+#PanelUI-menu-button[disabled="true"] {
+.tabbrowser-arrowscrollbox > .scrollbutton-up[disabled="true"], 
+.tabbrowser-arrowscrollbox > .scrollbutton-down[disabled="true"], 
+.tabbrowser-arrowscrollbox > .scrollbutton-up[disabled="false"], 
+.tabbrowser-arrowscrollbox > .scrollbutton-down[disabled="false"], 
+:root:not([customizing]) .toolbarbutton-1[disabled="true"], 
+#nav-bar-overflow-button[disabled="true"], 
+#PanelUI-menu-button[disabled="true"] {
+	opacity: 1 !important;
+}
+}
+
+.scrollbutton-up, 
+.scrollbutton-down,
+.tab-drop-indicator-box image,
+.tab-drop-indicator-box .tab-drop-indicator,
+.arrowscrollbox-overflow-end-indicator,
+.arrowscrollbox-overflow-start-indicator { 
+    visibility: collapse;
+    min-width: 20px;
+    max-width: 20px;
+    min-height: 25px;
+    max-height: 25px;
+    fill-opacity: 50% !important;
+    opacity: 100% !important;
+  border-top: 1px solid var(--tabs-border-color) !important;
+  border-left: 1px solid var(--tabs-border-color) !important;
+  border-right: 1px solid var(--tabs-border-color) !important;
+    
+}
+
+.arrowscrollbox-overflow-start-indicator,
+.arrowscrollbox-overflow-end-indicator,
+.tab-drop-indicator-box image {
+    display: none !important;
+    visibility: collapse !important;
+    border: 0px !important;
+}
+/* Remove shadow at tab scroll buttons */
+.scrollbutton-up image, 
+.scrollbutton-down image {
+    transform: scale(0.48) !important;
+}
+
+tab .tab-icon, .tab-icon-image {
+    opacity: 0.9 !important;
+}
+
+#TabsToolbar-customization-target {
+    min-height: 25px;
+    max-height: 25px;
+    padding: 0px;
+}
+
+
+
+/*
+remove tab top-border hilight on hover
+https://www.removeddit.com/r/FirefoxCSS/comments/7pr540/how_do_i_get_rid_of_tab_hover_effect/
+*/
+.tab-background:[selected="true"],
+.tab-line:[selected="true"]) {
+    background-color: transparent !important;
+    /* border-bottom-color: black !important; does nothing */
+}
+
+/* https://github.com/Aris-t2/CustomCSSforFx/issues/53 */
+.tab-line { display: none !important; }
+.tabbrowser-tab {
+  border-top: 1px solid var(--tabs-border-color) !important;
+  border-bottom: 1px solid var(--tabs-border-color) !important;
+}
+.tabbrowser-tab:-moz-window-inactive {
+  opacity: 0.5 !important;
+  border-bottom: none !important;
+}
+
+/* Make tab close buttons appear on tab hover, replacing the tab icon */
+/* was this from otherguy or scratch? TODO find out
+ * I adjusted to more Safari-like values, added throbber adustment too */
+.tabbrowser-tab .tab-close-button {
+	-moz-box-ordinal-group: 0 !important;
+	margin: 0px 4px 0px -6px !important;
+} .tab-icon-image {
+    margin-left: -4px;
+    /*opacity: 0 !important; /* TODO maybe remove this to keep favicons on tabs */
+    opacity: 0.9 !important;
+} .tabbrowser-tab .tab-close-button {
+	display: none !important;
+} .tab-throbber {
+    margin-left: -4px;
+}
+.tabbrowser-tab:not([pinned="true"]):hover .tab-icon-image,
+  .tabbrowser-tab:not([pinned="true"]):hover .tab-throbber {
+	display: none;
+} .tabbrowser-tab:not([pinned="true"]):hover .tab-close-button {
+	display: -moz-box !important;
+    width: 20px;
+} .tab-icon-image:-moz-window-inactive {
+    opacity: 0.2 !important;
+}
+
+/*************************************/
+
+
+
+
+/* uncomment to remove tab border
+tab.tabbrowser-tab:after {
+    border-left: 0px !important;
+} */
+
+
+/* TODO does nothing */
+image[aria-label="Reload page"] .path {
+    fill: orangered !important;
+    background-color: blue !important;
+    color: red !important;
+}
+
+/* TODO does not work */
+.widget-overflow-list .chromeclass-toolbar-additional image {
+    filter: grayscale(100%) contrast(100%);
+    max-width: 16px !important;
+    max-height: 16px !important;
+}
+
+/* Fixes padding on icons */
+#PlacesToolbar .toolbarbutton-icon[label]:not([label=""]),
+#PlacesToolbar .toolbarbutton-icon[type="menu"] {
+    filter: grayscale(100%) contrast(100%) !important;
+}
+
+#urlbar .urlbar-input-box,
+.searchbar-textbox > moz-input-box { 
+    opacity: 0.9 !important; 
+}
+
+#identity-box ~ *:hover,
+#tracking-protection-icon-container:hover, 
+#tracking-protection-icon-container ~ *:hover,
+#urlbar:focus-within > *,
+#urlbar-input-container:focus-within > *,
+.searchbar-textbox:hover > *,
+.searchbar-textbox:focus-within > *{ opacity: 1 }
+
+
+#identity-box > #identity-icon-labels{ transition: max-width 150ms linear !important; }
+#identity-box:not(:hover) > #identity-icon-labels{ max-width: 0px !important; }
+
+
+#PlacesToolbar .toolbarbutton-icon[label]:not([label=""]),
+#PlacesToolbar .toolbarbutton-icon[type="menu"] {
+    margin-inline-end: 0px !important;
+}
+
+.browserContainer > findbar {
+  -moz-box-ordinal-group: 0;
+  position: fixed !important;
+  right: 1em;
+  border: 1px solid threedshadow !important;
+
+  /* Hide the "border" at the top by removing the box-shadow and background-image */
+  border-top: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+
+  /* Uncomment to add a transition from the top */
+  /*
+  transition: 400ms !important;
+  z-index: 0 !important;
+  */
+}
+
+/* Margin from top when hidden (necessary for the transition to work) */
+/*findbar[hidden]{ margin-top: -2em !important; }*/
+
+/* Aligns the close button to the center */
+.findbar-closebutton {
+  margin-inline-start: 0.5em !important;
+  vertical-align: middle !important;
+  margin-bottom: 0.25em !important;
+  height: inherit !important;
+}
+
+
+
+
+/*************************************/
+
+
+
+
+
+
+/*
+ * Compact findbar at the top of the window
+ *
+ * Contributor(s): Madis0
+ * 
+ * https://github.com/Timvde/UserChrome-Tweaks/blob/72145b152c50341f64dcbb00d902b29fbc2a7a10/findbar/compact-findbar-on-top.css
+ * https://www.reddit.com/r/firefox/comments/7dhf8k/moving_the_findbar_to_the_top/
+ */
+
+.browserContainer > findbar {
+  -moz-box-ordinal-group: 0;
+  position: fixed !important;
+  right: 1em;
+  border: 1px solid threedshadow !important;
+
+  /* Hide the "border" at the top by removing the box-shadow and background-image */
+  border-top: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+
+  /* Uncomment to add a transition from the top */
+  /*
+  transition: 400ms !important;
+  z-index: 0 !important;
+  */
+}
+
+/* Margin from top when hidden (necessary for the transition to work) */
+/*findbar[hidden]{ margin-top: -2em !important; }*/
+
+/* Aligns the close button to the center */
+.findbar-closebutton {
+  margin-inline-start: 0.5em !important;
+  vertical-align: middle !important;
+  margin-bottom: 0.25em !important;
+  height: inherit !important;
+}
+

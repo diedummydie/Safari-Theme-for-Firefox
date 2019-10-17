@@ -1,0 +1,115 @@
+/* General toolbar coloring - buttons, text, findbar etc. */
+/* Color editing should generally be done in theme_color_variables.css */
+
+/*!!! IMPORT theme_color_variables.css !!!*/
+
+/* Override some default variables - stylesheet compatibility */
+:root{
+  --lwt-toolbar-field-background-color: var(--uc-dark-bkgnd-color) !important;
+  --lwt-toolbar-field-border-color: transparent !important;
+  --toolbar-bgcolor: var(--uc-light-bkgnd-color) !important;
+}
+#nav-bar{--uc-ext-active-color: var(--uc-active-color);}
+
+#navigator-toolbox > toolbar:not(#toolbar-menubar):not(#TabsToolbar),
+#browser-bottombox,
+#customization-container,
+findbar{
+	background-color: var(--uc-light-bkgnd-color) !important;
+	color: var(--uc-text-color) !important;
+}
+
+findbar{ background-image: none !important; }
+
+#TabsToolbar,
+#toolbar-menubar,
+.findbar-find-previous,
+.findbar-find-next,
+#urlbar,
+.findbar-textbox,
+.searchbar-textbox{
+  color: var(--uc-text-color) !important;
+}
+
+#TabsToolbar,
+#toolbar-menubar{
+  background-color: var(--uc-dark-bkgnd-color) !important;
+}
+
+.findbar-find-previous,
+.findbar-find-next{
+  background-color: var(--lwt-toolbar-field-background-color) !important;
+}
+
+#urlbar{ border-color: transparent !important; }
+
+#urlbar[focused]{
+	border-color: var(--uc-border-color) !important;
+}
+
+#urlbar .urlbar-icon:hover{
+  box-shadow: none !important;
+}
+
+#tabbrowser-tabs,
+.search-panel-input-value,
+.titlebar-buttonbox-container,
+.tab-close-button{
+  color: var(--uc-text-color) !important;
+}
+
+.toolbarbutton-icon:hover, toolbarbutton:hover > stack{ border-radius: 2px !important; }
+:root:not([uidensity="compact"]) #back-button > .toolbarbutton-icon{ border-radius: 10000px !important; }
+
+.toolbarbutton-1:not([disabled]):hover > .toolbarbutton-icon,
+.toolbarbutton-1:not([disabled]):hover > stack,
+.toolbarbutton-1[open="true"] > .toolbarbutton-icon,
+.toolbarbutton-1[open="true"] > stack,
+.toolbarbutton-1[checked="true"] > .toolbarbutton-icon,
+.toolbarbutton-1[checked="true"] > stack,
+#PlacesToolbarItems .bookmark-item:hover,
+#page-action-buttons image:hover,
+.urlbar-icon:hover,
+#TabsToolbar .scrollbutton-down:hover,
+#TabsToolbar .scrollbutton-up:hover{
+  background-color: var(--uc-active-color) !important;
+  box-shadow: inset 0 0 1px 1px var(--uc-border-color) !important;
+}
+
+findbar toolbarbutton:not([disabled]):not(.close-icon):hover,
+findbar toolbarbutton[checked="true"],
+findbar > .findbar-closebutton:hover > .toolbarbutton-icon{
+  background-color: var(--uc-active-color) !important;
+}
+
+.findbar-textbox:not(.minimal){ border-right: none !important; }
+.findbar-find-next{ border-left: none !important; }
+.findbar-textbox:focus-within ~ toolbarbutton{ border-color: var(--toolbar-field-focus-border-color, Highlight) !important; }
+
+/* Override some special cases */
+#TabsToolbar .scrollbutton-down > .toolbarbutton-icon,
+#TabsToolbar .scrollbutton-up > .toolbarbutton-icon,
+#downloads-indicator-anchor,
+#PersonalToolbar .bookmark-item > .toolbarbutton-icon,
+#titlebar .titlebar-button > .toolbarbutton-icon,
+#widget-overflow-mainView toolbarbutton > stack,
+#widget-overflow-mainView toolbarbutton > .toolbarbutton-icon{
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+#back-button {--backbutton-background: rgb(66,74,89) }
+
+.toolbarbutton-1{ fill: var(--uc-text-color) !important; }
+
+.tab-line{
+  height:2px !important;
+  border-bottom: solid 1px lightblue !important;
+}
+
+.tabbrowser-tab[selected] .tab-background{
+  background-image: linear-gradient(var(--uc-active-color) 75%,var(--uc-light-bkgnd-color)) !important;
+  box-shadow:0 3px 1px -1px white inset,  
+      0 10px 4px -5px var(--uc-border-color) inset,
+               0 -2px 0 rgba(0,0,0,.06) inset !important;
+}
