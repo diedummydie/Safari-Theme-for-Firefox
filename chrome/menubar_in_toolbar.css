@@ -1,8 +1,0 @@
-/* Makes menubar to appear in tabs toolbar pushing tabs to the side */
-#toolbar-menubar:not([inactive]) ~ #TabsToolbar{
-	margin-left:300px !important;
-	margin-top: -26px !important;
-}
-:root[sizemode="maximized"] #toolbar-menubar:not([inactive]) ~ #TabsToolbar{
-	margin-top: -28px !important;
-}
