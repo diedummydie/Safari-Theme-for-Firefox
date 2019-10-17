@@ -4,4 +4,4 @@ This setup configures Firefox components to look more integrated and native on m
 
 Links for those themes will appear here as soon as they are approved.
 
-![screenshot](https://raw.githubusercontent.com/diedummydie/Safari-Theme-for-Firefox/master/img/screenshot.jpg
+![screenshot](https://raw.githubusercontent.com/diedummydie/Safari-Theme-for-Firefox/master/img/screenshot.jpg)
