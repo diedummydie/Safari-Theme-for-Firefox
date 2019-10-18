@@ -9,16 +9,6 @@
 @import "chrome/hide_tabs_with_one_tab.css"; /* broken */
 
 
-#appcontent tabbrowser,#content,#tabbrowser-tabpanels,
-browser[type=content-primary],browser[type=content]>html {
-    background: none!important;
-    background-color: var(--toolbar-bgcolor)!important
-}
-
-spacer {
-    visibility: hidden!important
-}
-
 .titlebar-buttonbox-container {
     top: 0!important
 }
@@ -167,7 +157,7 @@ tab:-moz-window-inactive {
 }
 
 .tabbrowser-tab[fadein] { 
-    max-width: none !important
+    max-width: none!important
 }
 
 .tabbrowser-tab:-moz-window-inactive {
@@ -188,7 +178,7 @@ tab:-moz-window-inactive {
 }
 
 .tab-icon-image,.tab-throbber {
-    margin-left: -4px;
+    margin-left: -4px
 }
 
 .tabbrowser-tab:not([pinned=true]):hover .tab-icon-image,
@@ -217,12 +207,8 @@ tab:-moz-window-inactive {
     -moz-box-ordinal-group: 0
 }
 
-#tabbrowser-tabs {
-    
-}
-
 #new-tab-button {
-    visibility: visible !important;
+    visibility: visible !important
 }
 
 #new-tab-button,#alltabs-button {
@@ -234,7 +220,20 @@ tab:-moz-window-inactive {
 #alltabs-button .toolbarbutton-badge-stack {
     border-radius: 0!important;
     padding: 2!important;
-    width:22px!important;
+    width: 22px!important;
     opacity: .8!important;
     background-color: inherit!important
 }
+
+#appcontent tabbrowser,#content,#tabbrowser-tabpanels,
+browser[type=content-primary],browser[type=content]>html {
+    background: none!important;
+    background-color: var(--toolbar-bgcolor)!important
+}
+
+spacer {
+    visibility: hidden!important
+}
+
+
+
