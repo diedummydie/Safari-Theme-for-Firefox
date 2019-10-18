@@ -137,6 +137,7 @@ tab:-moz-window-inactive {
 .scrollbutton-down,.scrollbutton-up,.tab-drop-indicator-box .tab-drop-indicator,
 .tab-drop-indicator-box image {
     visibility: collapse;
+    border: 0!important
 }
 
 .arrowscrollbox-overflow-end-indicator,
@@ -163,6 +164,10 @@ tab:-moz-window-inactive {
 .tabbrowser-tab {
     border-top: 1px solid var(--tabs-border-color)!important;
     border-bottom: 0px solid var(--tabs-border-color)!important
+}
+
+.tabbrowser-tab[fadein] { 
+    max-width: none !important
 }
 
 .tabbrowser-tab:-moz-window-inactive {
@@ -210,6 +215,14 @@ tab:-moz-window-inactive {
 
 .browserContainer>findbar {
     -moz-box-ordinal-group: 0
+}
+
+#tabbrowser-tabs {
+    
+}
+
+#new-tab-button {
+    visibility: visible !important;
 }
 
 #new-tab-button,#alltabs-button {
