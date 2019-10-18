@@ -6,11 +6,13 @@ This setup configures Firefox components to look more integrated and native on m
 
 * [Safari Adaptive Dark](https://addons.mozilla.org/en-US/firefox/addon/safari-adapt-dark/)
 
-![screenshot](https://raw.githubusercontent.com/diedummydie/Safari-Theme-for-Firefox/master/img/screenshot.jpg)
+![screenshot](https://raw.githubusercontent.com/diedummydie/Safari-Theme-for-Firefox/master/etc/screenshot.jpg)
 
-Made possible with code and advice contributed by users of [reddit.com/r/FirefoxCSS](https://www.reddit.com/r/FirefoxCSS/), [MrOtherGuy](https://github.com/MrOtherGuy/firefox-csshacks/), [support.mozilla.org](https://support.mozilla.org/en-US/questions/firefox), and [forums.mozillazine.org/](http://forums.mozillazine.org/).
+### Public Domain
 
-This is free and unencumbered code released into the public domain.
+Made possible with code and advice contributed by users of [reddit.com/r/FirefoxCSS](https://www.reddit.com/r/FirefoxCSS/), [support.mozilla.org](https://support.mozilla.org/en-US/questions/firefox), and [forums.mozillazine.org/](http://forums.mozillazine.org/). The unmodified imports in chrome/ are graciously licensed under the GNU GPL by [MrOtherGuy](https://github.com/MrOtherGuy/firefox-csshacks/), included here for convenience. To release my own work under a more permissive (un)license I'm invoking the GPL linking exception.
+
+These themes and userChrome.css are free and unencumbered code released into the public domain.
 
 Anyone is free to copy, modify, publish, use, compile, sell, or
 distribute this code, either in source code form or as a compiled

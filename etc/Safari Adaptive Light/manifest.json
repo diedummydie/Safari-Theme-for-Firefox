@@ -1,0 +1,41 @@
+{
+  "manifest_version": 2,
+
+  "name": "Safari Adapt Light",
+  "version": "2019.1002",
+  "description": "Even better with Safari-Theme-for-Firefox: https://git.io/JeBLr",
+
+  "icons": {
+    "48": "icon.svg",
+    "96": "icon.svg"
+  },
+
+  "theme": {
+    "colors": {
+      "toolbar": "#e7e7e7",
+      "toolbar_text": "#575757",
+      "frame": "#bebebe",
+      "tab_background_text": "#000000",
+      "toolbar_field": "#fbfbfb",
+      "toolbar_field_text": "#333333",
+      "tab_line": "#cecece",
+      "popup":      "#f1f1f1",
+      "popup_text": "#3c3c3c",
+      "tab_loading": "#e6e6e6",
+      "tab_background_separator": "#7f7f7f",
+      "toolbar_top_separator":    "#b1b1b1",
+      "toolbar_bottom_separator": "#a7a7a7",
+      "toolbar_vertical_separator": "#ffffff88",
+      "tab_selected": "#d3d3d3",
+      "sidebar":        "#e5e5e5",
+      "ntp_background": "#e5e5e5",
+      "sidebar_text": "#2c2c2c",
+      "ntp_text":     "#2c2c2c",
+      "popup_highlight": "#3992f1",
+      "popup_highlight_text": "#ffffff",
+      "button_background_active": "#fefefe",
+      "button_background_hover": "#fefefe",
+      "frame_inactive": "#f6f6f6"
+    }
+  }
+}
