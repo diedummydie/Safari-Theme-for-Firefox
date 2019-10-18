@@ -11,7 +11,8 @@ This setup configures Firefox components to look more integrated and native on m
 ## Installation
 
 * Download this project with the green 'Clone or download' button above or [here](https://github.com/diedummydie/Safari-Theme-for-Firefox/archive/master.zip) (zip)
-* Open your Firefox profile folder (☰ Menu > Help > Troubleshooting Information > [Show...] next to 'Profile Folder')
+* Open your Firefox profile folder:
+  * ☰ Menu > Help > Troubleshooting Information > Profile Folder: [Show...]
 * Create a folder in your profile called `chrome` if one does not already exist
 * Copy `userChrome.css` and `chrome` into that new `chrome` folder
 * Restart Firefox
