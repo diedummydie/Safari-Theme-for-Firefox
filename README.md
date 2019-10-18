@@ -2,9 +2,9 @@
 
 This setup configures Firefox components to look more integrated and native on macOS or anywhere desired. It's made to work with the color themes below which let you switch between light and dark without editing CSS.
 
-* [Safari Adapt Light](https://addons.mozilla.org/en-US/firefox/addon/safari-adapt-light/)
+* [Safari Adaptive Light](https://addons.mozilla.org/en-US/firefox/addon/safari-adapt-light/)
 
-* [Safari Adapt Dark](https://addons.mozilla.org/en-US/firefox/addon/safari-adapt-dark/)
+* [Safari Adaptive Dark](https://addons.mozilla.org/en-US/firefox/addon/safari-adapt-dark/)
 
 ![screenshot](https://raw.githubusercontent.com/diedummydie/Safari-Theme-for-Firefox/master/img/screenshot.jpg)
 
