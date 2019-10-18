@@ -17,6 +17,7 @@ This setup configures Firefox components to look more integrated and native on m
 * Copy `userChrome.css` and `chrome` into that new `chrome` folder
 * Restart Firefox
 * Install one or more of the themes above (Safari Adaptive Light/Dark)
+* [Reload in address bar](https://addons.mozilla.org/en-US/firefox/addon/reload-in-address-bar/) is an optional extension
 
 ### Public Domain
 
