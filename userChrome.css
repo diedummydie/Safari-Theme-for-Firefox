@@ -25,9 +25,12 @@ spacer {
 
 #nav-bar {
     background-image: linear-gradient(#ffffff01,#0000001d)!important;
-    margin-left: -82px;
     margin-right: -16px;
     border-top: 1px solid var(--lwt-toolbar-vertical-separator)
+}
+
+#main-window:not([inFullscreen="true"]) #nav-bar {
+    margin-left: -82px;
 }
 
 #nav-bar:-moz-window-inactive {
@@ -113,7 +116,7 @@ tab:-moz-window-inactive {
     transform: scaleX(-1) !important;
 }
 
-#main-window #forward-button .toolbarbutton-badge-stack,
+
 #main-window #forward-button .toolbarbutton-icon {
     margin-left: 4px!important;
     margin-right: -3px!important
@@ -134,15 +137,6 @@ tab:-moz-window-inactive {
 .scrollbutton-down,.scrollbutton-up,.tab-drop-indicator-box .tab-drop-indicator,
 .tab-drop-indicator-box image {
     visibility: collapse;
-    min-width: 20px;
-    max-width: 20px;
-    min-height: 25px;
-    max-height: 25px;
-    fill-opacity: 50%!important;
-    opacity: 100%!important;
-    border-top: 1px solid var(--tabs-border-color)!important;
-    border-left: 1px solid var(--tabs-border-color)!important;
-    border-right: 1px solid var(--tabs-border-color)!important
 }
 
 .arrowscrollbox-overflow-end-indicator,
@@ -215,7 +209,7 @@ tab:-moz-window-inactive {
 }
 
 .browserContainer>findbar {
-    -moz-box-ordinal-group: 0;
+    -moz-box-ordinal-group: 0
 }
 
 #new-tab-button,#alltabs-button {
@@ -223,9 +217,11 @@ tab:-moz-window-inactive {
     border-left: 1px solid var(--tabs-border-color)!important
 }
 
-#new-tab-button .toolbarbutton-icon,#alltabs-button .toolbarbutton-badge-stack {
+#new-tab-button .toolbarbutton-icon,
+#alltabs-button .toolbarbutton-badge-stack {
     border-radius: 0!important;
-    padding: 4!important;
-    width:24px!important;
+    padding: 2!important;
+    width:22px!important;
+    opacity: .8!important;
     background-color: inherit!important
 }
