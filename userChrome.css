@@ -19,13 +19,31 @@
     border-top: 1px solid var(--lwt-toolbar-vertical-separator)
 }
 
-#main-window:not([inFullscreen="true"]) #nav-bar {
-    margin-left: -82px;
+#PersonalToolbar {
+    background-image: linear-gradient(#0000001d,#0000001f)!important;
+    padding-top: 4px!important;
+    padding-bottom: 4px!important;
+    border-top: 1px solid var(--tabs-border-color)!important
 }
 
-#nav-bar:-moz-window-inactive {
+#PersonalToolbar .toolbarbutton-1:not(-moz-window-inactive):hover,
+#PersonalToolbar .bookmark-item:hover {
+    background-image: linear-gradient(#00000058,#0000005b)!important;
+    color: #fdfdfd!important
+}
+
+#PersonalToolbar #PlacesChevron {
+    margin-right: 5px!important
+}
+
+#nav-bar:-moz-window-inactive, #PersonalToolbar:-moz-window-inactive {
     background-image: none!important;
-    background-color: var(--lwt-accent-color-inactive)!important
+    background-color: var(--lwt-accent-color-inactive)!important;
+    border-color: #00000022!important
+}
+
+#main-window:not([inFullscreen="true"]) #nav-bar {
+    margin-left: -82px
 }
 
 tab {
@@ -119,7 +137,8 @@ tab:-moz-window-inactive {
 #main-window:not([customizing]) .toolbarbutton-1:-moz-window-inactive[disabled=true],
 #nav-bar:-moz-window-inactive toolbarbutton>.toolbarbutton-icon,
 #nav-bar:-moz-window-inactive toolbarbutton>.toolbarbutton-icon:hover,
-.toolbarbutton-1:not(:hover):-moz-window-inactive {
+.toolbarbutton-1:not(:hover):-moz-window-inactive,
+#PersonalToolbar .bookmark-item:-moz-window-inactive {
     opacity: .6!important;
 }
 
