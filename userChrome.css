@@ -29,7 +29,7 @@
 #PersonalToolbar .toolbarbutton-1:not(-moz-window-inactive):hover,
 #PersonalToolbar .bookmark-item:hover {
     background-image: linear-gradient(#00000058,#0000005b)!important;
-    color: #fdfdfd!important
+    color: #fcfcfc!important
 }
 
 #PersonalToolbar #PlacesChevron {
@@ -47,11 +47,12 @@
 }
 
 tab {
-    background-image: linear-gradient(#ffffff00,#00000011)!important;
+    background-image: linear-gradient(#00000000,#00000011)!important;
 }
 
-tab:hover {
-    background-image: linear-gradient(#ffffff08,#00000019)!important
+.tabbrowser-tab:hover>.tab-stack>.tab-background:not([selected="true"]) {
+    background-image: linear-gradient(#00000008,#00000019)!important;
+    background-color: var(--lwt-accent-color)!important
 }
 
 tab:-moz-window-inactive {
