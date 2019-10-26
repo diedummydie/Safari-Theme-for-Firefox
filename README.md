@@ -1,6 +1,6 @@
 # Safari Theme for Firefox
 
-This setup configures Firefox components to look more integrated and native on macOS or anywhere desired. It's made to work with the color themes below which let you switch between light and dark without editing CSS.
+Make Firefox look more native on macOS. Switch between Light Mode and Dark Mode without editing CSS.
 
 ![screenshot](https://raw.githubusercontent.com/diedummydie/Safari-Theme-for-Firefox/master/etc/screenshot.jpg)
 
@@ -19,7 +19,7 @@ This setup configures Firefox components to look more integrated and native on m
 3. **Add the color themes**
     * [Safari Adaptive Light](https://addons.mozilla.org/en-US/firefox/addon/safari-adapt-light/)
     * [Safari Adaptive Dark](https://addons.mozilla.org/en-US/firefox/addon/safari-adapt-dark/)
-* Optional:
+* **Optional:**
     * Add the extension [Reload in address bar](https://addons.mozilla.org/en-US/firefox/addon/reload-in-address-bar/)
     * Right-click an empty area on the toolbar and select 'Customize...'
         * Re-arrange buttons to your preference
