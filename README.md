@@ -21,7 +21,7 @@ This setup configures Firefox components to look more integrated and native on m
     * Set the preference `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`
     * Restart Firefox
 3. Install one or more of the themes above (Safari Adaptive Light/Dark)
-4. Optional
+* Optional:
     * Add the extension [Reload in address bar](https://addons.mozilla.org/en-US/firefox/addon/reload-in-address-bar/)
     * Right-click an empty area on the toolbar and select 'Customize...'
         * Re-arrange buttons to your preference.
