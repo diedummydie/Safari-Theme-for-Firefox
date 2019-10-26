@@ -1,6 +1,8 @@
 # Safari Theme for Firefox
 
-Make Firefox look more native on macOS. Switch between Light Mode and Dark Mode without editing CSS.
+Make Firefox look more native on macOS.  
+
+Switch between Light Mode and Dark Mode without editing CSS.
 
 ![screenshot](https://raw.githubusercontent.com/diedummydie/Safari-Theme-for-Firefox/master/etc/screenshot.jpg)
 
