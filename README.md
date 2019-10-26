@@ -10,14 +10,22 @@ This setup configures Firefox components to look more integrated and native on m
 
 ## Installation
 
-* Download this project with the green 'Clone or download' button above or [here](https://github.com/diedummydie/Safari-Theme-for-Firefox/archive/master.zip) (zip)
-* Open your Firefox profile folder:
-  * ☰ Menu > Help > Troubleshooting Information > Profile Folder: [Show...]
-* Create a folder in your profile called `chrome` if one does not already exist
-* Copy `userChrome.css` and `lib` into that new `chrome` folder
-* Restart Firefox
-* Install one or more of the themes above (Safari Adaptive Light/Dark)
-* [Reload in address bar](https://addons.mozilla.org/en-US/firefox/addon/reload-in-address-bar/) is an optional extension
+1. Install the userChrome
+    1. Download this project with the green 'Clone or download' button above or [here](https://github.com/diedummydie/Safari-Theme-for-Firefox/archive/master.zip) (zip)
+    2. Open your Firefox profile folder:
+    ☰ Menu > Help > Troubleshooting Information > Profile Folder: [Show...]
+    3. Create a folder in your profile called `chrome` if it does not already exist
+    4. Copy `userChrome.css` and `lib` into that new `chrome` folder
+2. Enable the userChrome
+    1. Open [about:config](about:config)
+    2. Set the preference `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`
+    3. Restart Firefox
+3. Install one or more of the themes above (Safari Adaptive Light/Dark)
+4. Optional
+    1. Add the extension [Reload in address bar](https://addons.mozilla.org/en-US/firefox/addon/reload-in-address-bar/)
+    2. Right-click an empty area on the toolbar and select 'Customize...'
+    Re-arrange buttons to your preference.
+    Note that this allows quick access to theme selection (but doesn't show all if you've installed more than three).
 
 ### Public Domain
 
