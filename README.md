@@ -14,14 +14,14 @@ This setup configures Firefox components to look more integrated and native on m
 * Open your Firefox profile folder:
   * ☰ Menu > Help > Troubleshooting Information > Profile Folder: [Show...]
 * Create a folder in your profile called `chrome` if one does not already exist
-* Copy `userChrome.css` and `chrome` into that new `chrome` folder
+* Copy `userChrome.css` and `lib` into that new `chrome` folder
 * Restart Firefox
 * Install one or more of the themes above (Safari Adaptive Light/Dark)
 * [Reload in address bar](https://addons.mozilla.org/en-US/firefox/addon/reload-in-address-bar/) is an optional extension
 
 ### Public Domain
 
-Made possible with code and advice contributed by users of [reddit.com/r/FirefoxCSS](https://www.reddit.com/r/FirefoxCSS/), [support.mozilla.org](https://support.mozilla.org/en-US/questions/firefox), and [forums.mozillazine.org](http://forums.mozillazine.org/). The unmodified imports in chrome/ are graciously licensed under the GNU GPL by [MrOtherGuy](https://github.com/MrOtherGuy/firefox-csshacks/), included here for convenience. To release my own work under a more permissive (un)license I'm invoking the GPL linking exception.
+Made possible with code and advice contributed by users of [reddit.com/r/FirefoxCSS](https://www.reddit.com/r/FirefoxCSS/), [support.mozilla.org](https://support.mozilla.org/en-US/questions/firefox), and [forums.mozillazine.org](http://forums.mozillazine.org/). The imports in `lib/` are graciously licensed under the GNU GPL by [MrOtherGuy](https://github.com/MrOtherGuy/firefox-csshacks/), included here for convenience. To release my own work under a more permissive (un)license I'm invoking the GPL linking exception.
 
 **These themes and userChrome.css are free and unencumbered code released into the public domain.**
 
