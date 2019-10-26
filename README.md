@@ -24,8 +24,8 @@ This setup configures Firefox components to look more integrated and native on m
 * Optional:
     * Add the extension [Reload in address bar](https://addons.mozilla.org/en-US/firefox/addon/reload-in-address-bar/)
     * Right-click an empty area on the toolbar and select 'Customize...'
-        * Re-arrange buttons to your preference.
-        * Note that this allows quick access to theme selection (but doesn't show all if you've installed more than three).
+        * Re-arrange buttons to your preference
+        * Note that this allows quick access to theme selection (but doesn't show all if you've installed more than three)
 
 ### Public Domain
 
