@@ -15,7 +15,7 @@ Switch between Light Mode and Dark Mode without editing CSS.
     * Create a folder in your profile called `chrome` if it does not already exist
     * Copy `userChrome.css` and `lib` into that new `chrome` folder
 2. **Enable userChrome**
-    * Open [about:config](about:config)
+    * Open `about:config` in the address bar
     * Set the preference `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`
     * Restart Firefox
 3. **Add the color themes**
