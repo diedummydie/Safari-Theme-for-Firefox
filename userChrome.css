@@ -255,5 +255,11 @@ spacer {
     visibility: hidden!important
 }
 
-
-
+/* addr bar icons 16x16 */
+#page-action-buttons image {
+    min-width: 28px!important;
+    min-height: 22px!important;
+    width: 28px!important;
+    height: 22px!important;
+    padding: 3px 6px!important
+}
