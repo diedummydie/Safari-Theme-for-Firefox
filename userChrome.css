@@ -263,3 +263,8 @@ spacer {
     height: 22px!important;
     padding: 3px 6px!important
 }
+
+/* remove highlight on container tabs */
+.tabbrowser-tab[usercontextid] .tab-bottom-line {
+    display: none !important;
+}
