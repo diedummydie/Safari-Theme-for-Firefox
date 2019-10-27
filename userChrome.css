@@ -187,7 +187,7 @@ tab:-moz-window-inactive {
 
 .tabbrowser-tab .tab-close-button {
     -moz-box-ordinal-group: 0!important;
-    margin: 2px 6px 0px -4px!important;
+    margin: 1px 6px 1px -4px!important;
     width: 16px;
     height: 16px;
     display: none!important
@@ -198,7 +198,7 @@ tab:-moz-window-inactive {
 }
 
 .tab-icon-image,.tab-throbber {
-    margin-left: -4px
+    margin: 1px 6px 1px -4px!important;
 }
 
 .tabbrowser-tab:not([pinned=true]):hover .tab-icon-image,
@@ -215,6 +215,7 @@ tab:-moz-window-inactive {
 }
 
 .tab-label-container {
+    margin-top: -1px;
     margin-left: -2px
 }
 
