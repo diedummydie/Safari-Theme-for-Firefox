@@ -4,7 +4,6 @@
 
 
 /* https://github.com/MrOtherGuy/firefox-csshacks */
-@import "lib/window_control_placeholder_support.css";
 @import "lib/Fx65_tabs_on_bottom.css";
 @import "lib/hide_tabs_with_one_tab.css"; /* broken */
 
@@ -15,7 +14,6 @@
 
 #nav-bar {
     background-image: linear-gradient(#ffffff01,#0000001d)!important;
-    margin-right: -16px;
     border-top: 1px solid var(--lwt-toolbar-vertical-separator)
 }
 
@@ -42,8 +40,13 @@
     border-color: #00000022!important
 }
 
-#main-window:not([inFullscreen="true"]) #nav-bar {
-    margin-left: -82px
+#nav-bar:not([inFullscreen="true"]) {
+    margin-right: -16px;
+    padding-left: 56px
+}
+
+#nav-bar[inFullscreen="true"] {
+    padding: 0px 4px 0px 6px!important;
 }
 
 tab {
