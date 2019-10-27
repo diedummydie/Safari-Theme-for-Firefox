@@ -264,7 +264,7 @@ spacer {
     padding: 3px 6px!important
 }
 
-/* remove highlight on container tabs */
+/* remove container tab highlight */
 .tabbrowser-tab[usercontextid] .tab-bottom-line {
     display: none !important;
 }
