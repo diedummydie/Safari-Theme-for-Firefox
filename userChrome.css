@@ -99,7 +99,7 @@ tab:-moz-window-inactive {
     border-radius: 5px!important;
     opacity: 1!important;
     background-clip: padding-box;
-    border: 1px #47474720 solid!important;
+    border: 0.5px #47474720 solid!important;
     border-bottom: 1px #4444443a solid!important
 }
 
