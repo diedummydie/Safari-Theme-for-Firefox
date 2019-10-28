@@ -259,7 +259,7 @@ spacer {
     visibility: hidden!important
 }
 
-/* addr bar icons 16x16 */
+/* address bar icons 16x16 */
 #page-action-buttons image {
     min-width: 28px!important;
     min-height: 22px!important;
@@ -280,4 +280,13 @@ spacer {
 .tab-label {
     -moz-box-flex: 1!important;
     text-align: center !important
+}
+
+#alltabs-button {
+    display:none;
+}
+
+/* remove doubled border before newtab button */
+.tabbrowser-arrowscrollbox {
+    margin-right:-1px;
 }
