@@ -270,5 +270,14 @@ spacer {
 
 /* remove container tab highlight */
 .tabbrowser-tab[usercontextid] .tab-bottom-line {
-    display: none !important;
+    display: none !important
+}
+
+#pageActionSeparator {
+    display: none!important
+}
+
+.tab-label {
+    -moz-box-flex: 1!important;
+    text-align: center !important
 }
