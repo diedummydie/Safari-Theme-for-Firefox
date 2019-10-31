@@ -3,7 +3,7 @@
 
 /* REMOVE ALL BUTTONS you can from the tabs toolbar or this won't work properly */
 
-:root[sizemode="normal"] #nav-bar{ --uc-window-drag-space-width: 20px }
+:root:not([sizemode="fullscreen"]) #nav-bar{ --uc-window-drag-space-width: 20px }
 
 #titlebar{ -moz-appearance: none !important; }
 

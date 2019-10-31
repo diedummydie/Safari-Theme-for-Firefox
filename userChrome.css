@@ -40,13 +40,13 @@
     border-color: #00000022!important
 }
 
-#nav-bar:not([inFullscreen="true"]) {
+:root:not([sizemode="fullscreen"]) #nav-bar {
     margin-right: -16px;
     padding-left: 56px
 }
 
-#nav-bar[inFullscreen="true"] {
-    padding: 0px 4px 0px 6px!important;
+:root[sizemode="fullscreen"] #nav-bar {
+    padding: 0px 4px 0px 6px !important;
 }
 
 tab {
