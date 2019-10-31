@@ -260,7 +260,7 @@ spacer {
 }
 
 /* address bar icons 16x16 */
-#page-action-buttons image {
+#page-action-buttons image.urlbar-icon {
     min-width: 28px!important;
     min-height: 22px!important;
     width: 28px!important;
