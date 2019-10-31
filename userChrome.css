@@ -126,6 +126,7 @@ tab:-moz-window-inactive {
 #forward-button {
 	list-style-image: url("chrome://browser/skin/arrow-left.svg")!important;
     transform: scaleX(-1) !important;
+    margin-left: 1px !important;
 }
 
 
