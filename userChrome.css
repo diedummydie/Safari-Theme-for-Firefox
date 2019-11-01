@@ -49,6 +49,12 @@
     padding: 0px 4px 0px 6px !important;
 }
 
+:root[sizemode="maximized"] #nav-bar {
+    padding-left: 76px;
+    padding-right: 4px;
+    margin-right: 0px
+}
+
 tab {
     background-image: linear-gradient(#00000000,#00000011)!important;
 }
