@@ -40,19 +40,13 @@
     border-color: #00000022!important
 }
 
-#nav-bar:not([inFullscreen="true"]) {
+:root:not([sizemode="fullscreen"]) #nav-bar {
     margin-right: -16px;
     padding-left: 56px
 }
 
-#nav-bar[inFullscreen="true"] {
-    padding: 0px 4px 0px 6px!important;
-}
-
-:root[sizemode="maximized"] #nav-bar {
-    padding-left: 76px;
-    padding-right: 4px;
-    margin-right: 0px
+:root[sizemode="fullscreen"] #nav-bar {
+    padding: 0px 4px 0px 6px !important;
 }
 
 tab {
@@ -132,6 +126,7 @@ tab:-moz-window-inactive {
 #forward-button {
 	list-style-image: url("chrome://browser/skin/arrow-left.svg")!important;
     transform: scaleX(-1) !important;
+    margin-left: 1px !important;
 }
 
 
@@ -266,7 +261,7 @@ spacer {
 }
 
 /* address bar icons 16x16 */
-#page-action-buttons image {
+#page-action-buttons image.urlbar-icon {
     min-width: 28px!important;
     min-height: 22px!important;
     width: 28px!important;
