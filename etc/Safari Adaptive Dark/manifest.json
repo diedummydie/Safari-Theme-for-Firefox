@@ -2,12 +2,13 @@
   "manifest_version": 2,
 
   "name": "Safari Adapt Dark",
-  "version": "2019.1002",
+  "version": "2019.1102",
   "description": "Even better with Safari-Theme-for-Firefox: https://git.io/JeBLr",
 
   "icons": {
-    "48": "icon.svg",
-    "96": "icon.svg"
+    "48": "dark48.png",
+    "96": "dark96.png",
+    "256": "dark256.png"
   },
 
   "theme": {
@@ -19,18 +20,18 @@
       "toolbar_field": "#6f6f6f",
       "toolbar_field_text": "#ffffff",
       "tab_line": "#4f4f4f",
-      "popup":      "#262626",
+      "popup": "#262626",
       "popup_text": "#d7d7d7",
       "tab_loading": "#555555",
       "tab_background_separator": "#7f7f7f",
-      "toolbar_top_separator":    "#5f5f5f",
+      "toolbar_top_separator": "#5f5f5f",
       "toolbar_bottom_separator": "#000000",
       "toolbar_vertical_separator": "#000000ff",
       "tab_selected": "#3e3e3e",
-      "sidebar":        "#262626",
+      "sidebar": "#262626",
       "ntp_background": "#262626",
       "sidebar_text": "#dedede",
-      "ntp_text":     "#dedede",
+      "ntp_text": "#dedede",
       "popup_highlight": "#3992f1",
       "popup_highlight_text": "#ffffff",
       "button_background_active": "#6f6f6f",
