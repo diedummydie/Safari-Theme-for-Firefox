@@ -14,40 +14,63 @@ linux_gtk_window_control_patch.css
 
 */
 
-:root{
-  --uc-titlebar-padding: 0px; }
-:root[sizemode="maximized"][tabsintitlebar]{ --uc-titlebar-padding: 8px }
+:root {
+  --uc-titlebar-padding: 0px;
+}
+:root[sizemode="maximized"][tabsintitlebar] {
+  --uc-titlebar-padding: 8px;
+}
 
-.titlebar-buttonbox-container{
+.titlebar-buttonbox-container {
   position: fixed;
   display: block;
-  top: var(--uc-titlebar-padding,0px);
-  right:0;
+  top: var(--uc-titlebar-padding, 0px);
+  right: 0;
   height: 40px;
 }
 /* Mac specific. You should set that font-smoothing pref to true if you are on any platform where window controls are on left */
-@supports -moz-bool-pref("layout.css.osx-font-smoothing.enabled"){
-	:root{ --uc-titlebar-padding: 0px !important }
-	.titlebar-buttonbox-container{ left:0; right: unset; }
+@supports -moz-bool-pref("layout.css.osx-font-smoothing.enabled") {
+  :root {
+    --uc-titlebar-padding: 0px !important;
+  }
+  .titlebar-buttonbox-container {
+    left: 0;
+    right: unset;
+  }
 }
 
-:root[uidensity="compact"] .titlebar-buttonbox-container{ height: 32px }
+:root[uidensity="compact"] .titlebar-buttonbox-container {
+  height: 32px;
+}
 
-#toolbar-menubar[inactive] > .titlebar-buttonbox-container{ opacity: 0 }
+#toolbar-menubar[inactive] > .titlebar-buttonbox-container {
+  opacity: 0;
+}
 
-#navigator-toolbox{ padding-top: var(--uc-titlebar-padding,0px) !important; }
+#navigator-toolbox {
+  padding-top: var(--uc-titlebar-padding, 0px) !important;
+}
 
+.titlebar-buttonbox-container > .titlebar-buttonbox {
+  height: 100%;
+}
 
-.titlebar-buttonbox-container > .titlebar-buttonbox{ height: 100%; }
-
-#titlebar{
- -moz-box-ordinal-group: 2;
+#titlebar {
+  -moz-box-ordinal-group: 2;
   -moz-appearance: none !important;
 }
 
 .titlebar-placeholder,
-#TabsToolbar .titlebar-spacer{ display: none; }
+#TabsToolbar .titlebar-spacer {
+  display: none;
+}
 /* Also hide the toolbox bottom border which isn't at bottom with this setup */
-#navigator-toolbox::after{ display: none !important; }
+#navigator-toolbox::after {
+  display: none !important;
+}
 
-@media (-moz-gtk-csd-close-button){ .titlebar-button{ -moz-box-orient: vertical } }
+@media (-moz-gtk-csd-close-button) {
+  .titlebar-button {
+    -moz-box-orient: vertical;
+  }
+}
