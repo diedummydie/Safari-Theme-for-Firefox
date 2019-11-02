@@ -201,8 +201,13 @@ tab:-moz-window-inactive {
     opacity: .9!important
 }
 
+.tabbrowser-tab:not([pinned=true]):not(:hover) .tab-icon-image:not([src]):not([busy]) {
+    display: -moz-box!important
+}
+
 .tab-icon-image,.tab-throbber {
     margin: 1px 6px 1px -4px!important;
+    transition: none!important;
 }
 
 .tabbrowser-tab:not([pinned=true]):hover .tab-icon-image,
