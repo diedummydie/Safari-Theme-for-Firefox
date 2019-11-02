@@ -103,6 +103,11 @@ tab:-moz-window-inactive {
     border-bottom: 1px #4444443a solid!important
 }
 
+#nav-bar toolbarbutton:active .toolbarbutton-badge-stack,
+#nav-bar toolbarbutton:active .toolbarbutton-icon {
+    background-image: linear-gradient(var(--arrowpanel-dimmed), var(--arrowpanel-dimmed))!important;
+}
+
 #PanelUI-menu-button[disabled=true],#nav-bar-overflow-button[disabled=true],
 #urlbar *,.tabbrowser-arrowscrollbox>.scrollbutton-down[disabled=true],
 .tabbrowser-arrowscrollbox>.scrollbutton-up[disabled=true],
