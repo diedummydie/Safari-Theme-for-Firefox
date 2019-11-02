@@ -28,13 +28,6 @@ Switch between Light Mode and Dark Mode without editing CSS.
     - Re-arrange buttons to your preference
     - Note that this allows quick access to theme selection (but doesn't show all if you've installed more than three)
 
-### Public Domain
+### Acknowledgements
 
-Made possible with code and advice contributed by users of [reddit.com/r/FirefoxCSS](https://www.reddit.com/r/FirefoxCSS/), [support.mozilla.org](https://support.mozilla.org/en-US/questions/firefox), and [forums.mozillazine.org](http://forums.mozillazine.org/). The imports in `lib/` are graciously licensed under the GNU GPL by [MrOtherGuy](https://github.com/MrOtherGuy/firefox-csshacks/), included here for convenience. To release my own work under a more permissive (un)license I'm invoking the GPL linking exception.
-
-**These themes and userChrome.css are free and unencumbered code released into the public domain.**
-
-Anyone is free to copy, modify, publish, use, compile, sell, or
-distribute this code, either in source code form or as a compiled
-extension, for any purpose, commercial or non-commercial, and by any
-means.
+Made possible with advice and code examples contributed by the community of [reddit.com/r/FirefoxCSS](https://www.reddit.com/r/FirefoxCSS/), [support.mozilla.org](https://support.mozilla.org/en-US/questions/firefox), [forums.mozillazine.org](http://forums.mozillazine.org/). Files in `lib` are from [MrOtherGuy/firefox-csshacks](https://github.com/MrOtherGuy/firefox-csshacks/).
