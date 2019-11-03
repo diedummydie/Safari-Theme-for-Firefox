@@ -20,7 +20,7 @@ Switch between Light Mode and Dark Mode without editing CSS.
    - Restart Firefox
 3. **Add the color themes**
    - ![Light theme icon](https://github.com/diedummydie/Safari-Theme-for-Firefox/raw/master/etc/Safari%20Adaptive%20Dark/light48.png) [Safari Adaptive Light](https://addons.mozilla.org/en-US/firefox/addon/safari-adapt-light/)
-   - ![Dark theme icon](https://github.com/diedummydie/Safari-Theme-for-Firefox/raw/master/etc/Safari%20Adaptive%20Dark/dark48.png) [Safari Adaptive Dark](https://addons.mozilla.org/en-US/firefox/addon/safari-adapt-dark/)
+   - ![Dark theme icon](https://github.com/diedummydie/Safari-Theme-for-Firefox/raw/master/etc/Safari%20Adaptive%20Light/dark48.png) [Safari Adaptive Dark](https://addons.mozilla.org/en-US/firefox/addon/safari-adapt-dark/)
 
 - **Optional:**
   - Add the extension [Reload in address bar](https://addons.mozilla.org/en-US/firefox/addon/reload-in-address-bar/)
