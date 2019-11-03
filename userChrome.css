@@ -95,7 +95,7 @@ tab:-moz-window-inactive {
     hsla(0, 0%, 100%, 1)
   ) !important;
   box-shadow: inset 0 1px 0 #ffffff22 !important;
-  padding: 3px 10px !important;
+  padding: 3.25px 11px !important;
   margin-left: 2px !important;
   margin-right: 2px !important;
   height: 24px !important;
