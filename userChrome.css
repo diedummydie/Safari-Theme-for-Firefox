@@ -11,12 +11,12 @@
 }
 
 #nav-bar {
-  background-image: linear-gradient(#ffffff01, #0000001d) !important;
+  background-image: linear-gradient(#ffffff10, #00000010) !important;
   border-top: 1px solid var(--lwt-toolbar-vertical-separator);
 }
 
 #PersonalToolbar {
-  background-image: linear-gradient(#0000001d, #0000001f) !important;
+  background-image: linear-gradient(#00000010, #00000015) !important;
   padding-top: 4px !important;
   padding-bottom: 4px !important;
   border-top: 1px solid var(--tabs-border-color) !important;
@@ -49,11 +49,11 @@
 }
 
 tab {
-  background-image: linear-gradient(#00000000, #00000011) !important;
+  background-image: linear-gradient(#ffffff04, #00000004) !important;
 }
 
 .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected="true"]) {
-  background-image: linear-gradient(#00000008, #00000019) !important;
+  background-image: linear-gradient(#ffffff00, #00000024) !important;
   background-color: var(--lwt-accent-color) !important;
 }
 
