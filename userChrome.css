@@ -48,18 +48,24 @@
   padding: 0px 4px 0px 6px !important;
 }
 
+.tab-background[multiselected="true"],
+.tab-background[selected="true"] {
+  background-image: linear-gradient(#ffffff10, #00000010) !important;
+  background-color: var(--lwt-selected-tab-background-color) !important;
+}
+
 tab {
   background-image: linear-gradient(#ffffff04, #00000004) !important;
 }
 
 .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected="true"]) {
-  background-image: linear-gradient(#ffffff00, #00000024) !important;
+  background-image: linear-gradient(#00000008, #00000012) !important;
   background-color: var(--lwt-accent-color) !important;
 }
 
 tab:-moz-window-inactive {
   background-image: none !important;
-  background-color: var(--lwt-accent-color-inactive) !important;
+  background-color: var(--lwt-accent-color) !important;
   color: var(--panel-disabled-color) !important;
 }
 
@@ -229,7 +235,7 @@ tab:-moz-window-inactive {
 .tab-icon-image,
 .tab-throbber {
   margin: 1px 6px 1px -4px !important;
-  transition: none !important;
+  transition-duration: 0.1s !important;
 }
 
 .tabbrowser-tab:not([pinned="true"]):hover .tab-icon-image,
