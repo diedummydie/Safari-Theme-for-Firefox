@@ -121,6 +121,12 @@ tab:-moz-window-inactive {
   ) !important;
 }
 
+#PanelUI-button {
+  margin-inline-start: unset !important;
+  border-inline-start: unset !important;
+  border: unset !important;
+}
+
 #PanelUI-menu-button[disabled="true"],
 #nav-bar-overflow-button[disabled="true"],
 #urlbar *,
