@@ -148,11 +148,11 @@ tab:-moz-window-inactive {
 }
 
 #back-button {
-  list-style-image: url("chrome://browser/skin/arrow-left.svg") !important;
+  list-style-image: url("chrome://global/skin/icons/arrow-left.svg") !important;
 }
 
 #forward-button {
-  list-style-image: url("chrome://browser/skin/arrow-left.svg") !important;
+  list-style-image: url("chrome://global/skin/icons/arrow-left.svg") !important;
   transform: scaleX(-1) !important;
   margin-left: 1px !important;
 }
