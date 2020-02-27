@@ -334,3 +334,14 @@ spacer {
 .tabbrowser-arrowscrollbox {
   margin-right: -1px;
 }
+
+/* Remove Page Actions Menu */
+#pageActionButton 
+{
+  display: none !important;
+}
+/* Put refresh button "inside" address bar */
+#pageActionSeparator
+{
+    margin-right:26px !important;
+}
