@@ -4,7 +4,7 @@
 
 /* https://github.com/MrOtherGuy/firefox-csshacks */
 @import "lib/Fx65_tabs_on_bottom.css";
-@import "lib/hide_tabs_with_one_tab.css"; /* broken */
+@import "lib/hide_tabs_with_one_tab.css";
 
 .titlebar-buttonbox-container {
   top: 0 !important;
@@ -344,4 +344,9 @@ spacer {
 #pageActionSeparator
 {
     margin-right:26px !important;
+}
+
+/* hide tracking protection container */
+#tracking-protection-icon-container{
+   display: none;
 }
