@@ -339,7 +339,11 @@ spacer {
 }
 
 /* Remove Page Actions Menu */
+<<<<<<< HEAD
 #pageActionButton
+=======
+#pageActionButton 
+>>>>>>> Remove page actions menu
 {
   display: none !important;
 }
@@ -348,6 +352,7 @@ spacer {
 {
     margin-right:26px !important;
 }
+<<<<<<< HEAD
 
 /* hide tracking protection container */
 #tracking-protection-icon-container{
@@ -460,3 +465,5 @@ border-width: 3px !important;
 {
 	border-color: var(--lwt-toolbar-field-background-color) !important;
 }
+=======
+>>>>>>> Remove page actions menu
