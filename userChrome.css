@@ -4,7 +4,7 @@
 
 /* https://github.com/MrOtherGuy/firefox-csshacks */
 @import "lib/Fx65_tabs_on_bottom.css";
-@import "lib/hide_tabs_with_one_tab.css"; /* broken */
+@import "lib/hide_tabs_with_one_tab.css";
 
 .titlebar-buttonbox-container {
   top: 0 !important;
@@ -148,11 +148,11 @@ tab:-moz-window-inactive {
 }
 
 #back-button {
-  list-style-image: url("chrome://browser/skin/arrow-left.svg") !important;
+  list-style-image: url("chrome://global/skin/icons/arrow-left.svg") !important;
 }
 
 #forward-button {
-  list-style-image: url("chrome://browser/skin/arrow-left.svg") !important;
+  list-style-image: url("chrome://global/skin/icons/arrow-left.svg") !important;
   transform: scaleX(-1) !important;
   margin-left: 1px !important;
 }
@@ -335,8 +335,23 @@ spacer {
   margin-right: -1px;
 }
 
+/* Remove Page Actions Menu */
+#pageActionButton
+{
+  display: none !important;
+}
+/* Put refresh button "inside" address bar */
+#pageActionSeparator
+{
+    margin-right:26px !important;
+}
 
-/* TABS: height. Solution based on https://support.mozilla.org/nl/questions/1243994 */ 
+/* hide tracking protection container */
+#tracking-protection-icon-container{
+   display: none;
+}
+
+/* TABS: height */
 :root {
  --tab-toolbar-navbar-overlap: 0px !important; /* fix for full screen mode */
  --tab-min-height: 25px !important;
@@ -384,3 +399,50 @@ spacer {
   }
 
 /*** END Firefox 77 (June 2, 2020) Override URL bar enlargement ***/
+
+
+
+/* Force black-on-white for address bar drop-down. Solution from https://support.mozilla.org/en-US/questions/1289990#question-reply*/
+.urlbarView {
+  /* Eliminate dark background outside */
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: 100% !important;
+  /* Preserve bottom border */
+  border-bottom: 1px solid
+    var(--toolbar-field-focus-border-color);
+}
+.urlbarView-body-inner, .search-one-offs {
+  /* Pure black, slightly off-white background */
+  color: #000 !important;
+  background-color: #f8f8f8 !important;
+  /* Remove extra line */
+  border-top-color: transparent !important;
+  /* Adjust distance to edges  */
+  padding: 0 6px !important;
+}
+.urlbarView-body-inner {
+  /* Fix width to avoid rows being too long */
+  width: calc(100% - 12px) !important;
+}
+
+/* Resolve close min maximum button size. Solution from https://support.mozilla.org/en-US/questions/1222872*/
+
+titlebar-buttonbox {
+ display: flex !important;
+ flex-direction: row-reverse !important;
+}
+
+/* .tabbrowser-tab {
+ visibility: hidden;
+} */
+
+
+.titlebar-placeholder[type="pre-tabs"] {
+ width: 100px !important;
+}
+
+/* #titlebar-secondary-buttonbox:-moz-locale-dir(rtl), */
+titlebar-buttonbox-container {
+ -moz-box-ordinal-group: 0 !important;
+}
