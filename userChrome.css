@@ -334,3 +334,14 @@ spacer {
 .tabbrowser-arrowscrollbox {
   margin-right: -1px;
 }
+
+
+/* TABS: height. Solution based on https://support.mozilla.org/nl/questions/1243994 */ 
+:root {
+ --tab-toolbar-navbar-overlap: 0px !important; /* fix for full screen mode */
+ --tab-min-height: 25px !important;
+}
+:root #tabbrowser-tabs {
+ --tab-min-height: 25px !important;
+}
+#TabsToolbar {height: var(--tab-min-height) !important;}
