@@ -81,14 +81,14 @@ tab:-moz-window-inactive {
 
 #urlbar {
   background-image: linear-gradient(#ffffff06, #00000000) !important;
-  box-shadow: inset 0 1px 0 ffffff2a !important;
+  box-shadow: inset 0 0px 0 ffffff2a !important;
   min-height: 22px !important;
   height: 24px !important;
   margin-top: 3px !important;
   margin-bottom: 3px !important;
   box-sizing: border-box;
-  border: 1px #3b3b3b44 solid !important;
-  border-bottom: 1px #37373744 solid !important;
+  border: 0px #3b3b3b44 solid !important;
+  border-bottom: 0px #37373744 solid !important;
   top:;
 }
 
@@ -435,6 +435,8 @@ spacer {
 
 #urlbar[breakout][breakout-extend] #urlbar-background {
 border-color: #89b3f9 !important;
+border-width: 3px !important;
+
 }
 
 #urlbar[breakout] {
@@ -447,4 +449,15 @@ border-color: #89b3f9 !important;
 
 #urlbar {
     border: none !important;
+}
+
+#urlbar[breakout] > #urlbar-input-container
+{
+	border: none !important;
+	box-shadow: none !important;
+}
+
+#urlbar-background
+{
+	border-color: var(--lwt-toolbar-field-background-color) !important;
 }
