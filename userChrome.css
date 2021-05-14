@@ -87,6 +87,7 @@ tab:-moz-window-inactive {
   box-sizing: border-box;
   border: 1px #3b3b3b44 solid !important;
   border-bottom: 1px #37373744 solid !important;
+  top:;
 }
 
 #urlbar:-moz-window-inactive {
@@ -433,11 +434,6 @@ titlebar-buttonbox {
  flex-direction: row-reverse !important;
 }
 
-/* .tabbrowser-tab {
- visibility: hidden;
-} */
-
-
 .titlebar-placeholder[type="pre-tabs"] {
  width: 100px !important;
 }
@@ -445,4 +441,23 @@ titlebar-buttonbox {
 /* #titlebar-secondary-buttonbox:-moz-locale-dir(rtl), */
 titlebar-buttonbox-container {
  -moz-box-ordinal-group: 0 !important;
+}
+
+/* Change URLBar Properties */
+
+
+#urlbar[breakout][breakout-extend] #urlbar-background {
+border-color: #89b3f9 !important;
+}
+
+#urlbar[breakout] {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 3px !important;
+  left: 0;
+}
+
+#urlbar {
+    border: none !important;
 }
