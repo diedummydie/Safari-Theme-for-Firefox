@@ -243,7 +243,7 @@ tab:-moz-window-inactive {
 
 .tab-icon-image,
 .tab-throbber {
-  margin: 1px 6px 1px -4px !important;
+  margin: 1px 6px 1px 0px !important;
   transition-duration: 0.1s !important;
 }
 
