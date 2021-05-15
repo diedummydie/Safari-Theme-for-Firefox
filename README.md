@@ -4,6 +4,7 @@ Make Firefox look native on macOS.
 
 Updated package from https://github.com/diedummydie/Safari-Theme-for-Firefox, compatible with OSx Big Sur and Firefox 88. Errors that have been resolved in this first release:
 
+- Fix empty back and forward buttons (fix from @gamunu, https://github.com/diedummydie/Safari-Theme-for-Firefox/pull/19)
 - Location minimize/maximize/close buttons on OSx restored
 - Removed borders, thick lightblue border when activated
 - Resolved issue of moving text while hovering over tabs
