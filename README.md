@@ -1,6 +1,6 @@
 # Safari Theme for Firefox
 
-Make Firefox look more native on macOS.
+Make Firefox look native on macOS.
 
 Updated package from https://github.com/diedummydie/Safari-Theme-for-Firefox, compatible with OSx Big Sur and Firefox 88. Errors that have been resolved in this first release:
 
