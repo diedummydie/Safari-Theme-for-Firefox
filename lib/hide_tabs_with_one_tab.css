@@ -15,9 +15,7 @@
 #tabbrowser-tabs > .tabbrowser-arrowscrollbox {
   min-height: 0 !important;
 }
-
 :root:not([customizing]) #tabbrowser-tabs .tabs-newtab-button,
-:root:not([customizing]) #tabs-newtab-button,
 :root:not([customizing]) #TabsToolbar .titlebar-button {
   -moz-appearance: none !important;
   height: 0px;
@@ -29,13 +27,9 @@
   max-height: 0px;
   visibility: collapse !important;
 }
+
 #tabbrowser-tabs .tabbrowser-tab {
   height: var(--tab-min-height);
-}
-
-#tabbrowser-tabs
-  .tabbrowser-tab[first-visible-tab="true"][last-visible-tab="true"] {
-  visibility: collapse !important;
 }
 
 /* Button re-styling */

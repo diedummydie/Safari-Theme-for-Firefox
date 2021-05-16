@@ -1,13 +1,15 @@
 /* Safari Theme for Firefox
- * https://github.com/diedummydie/Safari-Theme-for-Firefox
+ * https://github.com/diedummydie/Safari-Theme-for-Firefox with contributions of https://github.com/floriandierickx/Safari-Theme-for-Firefox/ for adaptation to OSx Big Sur and Firefox 88
  */
 
 /* https://github.com/MrOtherGuy/firefox-csshacks */
 @import "lib/Fx65_tabs_on_bottom.css";
-@import "lib/hide_tabs_with_one_tab.css"; /* broken */
+@import "lib/hide_tabs_with_one_tab.css";
 
-.titlebar-buttonbox-container {
-  top: 0 !important;
+.titlebar-buttonbox-container{
+    position:   fixed;
+    top:        10px;
+    left:      0px;
 }
 
 #nav-bar {
@@ -79,14 +81,15 @@ tab:-moz-window-inactive {
 
 #urlbar {
   background-image: linear-gradient(#ffffff06, #00000000) !important;
-  box-shadow: inset 0 1px 0 ffffff2a !important;
+  box-shadow: inset 0 0px 0 ffffff2a !important;
   min-height: 22px !important;
   height: 24px !important;
   margin-top: 3px !important;
   margin-bottom: 3px !important;
   box-sizing: border-box;
-  border: 1px #3b3b3b44 solid !important;
-  border-bottom: 1px #37373744 solid !important;
+  border: 0px #3b3b3b44 solid !important;
+  border-bottom: 0px #37373744 solid !important;
+  top:;
 }
 
 #urlbar:-moz-window-inactive {
@@ -148,11 +151,11 @@ tab:-moz-window-inactive {
 }
 
 #back-button {
-  list-style-image: url("chrome://browser/skin/arrow-left.svg") !important;
+  list-style-image: url("chrome://global/skin/icons/arrow-left.svg") !important;
 }
 
 #forward-button {
-  list-style-image: url("chrome://browser/skin/arrow-left.svg") !important;
+  list-style-image: url("chrome://global/skin/icons/arrow-left.svg") !important;
   transform: scaleX(-1) !important;
   margin-left: 1px !important;
 }
@@ -240,7 +243,7 @@ tab:-moz-window-inactive {
 
 .tab-icon-image,
 .tab-throbber {
-  margin: 1px 6px 1px -4px !important;
+  margin: 1px 6px 1px 0px !important;
   transition-duration: 0.1s !important;
 }
 
@@ -333,4 +336,127 @@ spacer {
 /* remove doubled border before newtab button */
 .tabbrowser-arrowscrollbox {
   margin-right: -1px;
+}
+
+/* Remove Page Actions Menu */
+#pageActionButton
+{
+  display: none !important;
+}
+/* Put refresh button "inside" address bar */
+#pageActionSeparator
+{
+    margin-right:26px !important;
+}
+
+/* hide tracking protection container */
+#tracking-protection-icon-container{
+   display: none;
+}
+
+/* TABS: height */
+:root {
+ --tab-toolbar-navbar-overlap: 0px !important; /* fix for full screen mode */
+ --tab-min-height: 25px !important;
+}
+:root #tabbrowser-tabs {
+ --tab-min-height: 25px !important;
+}
+#TabsToolbar {height: var(--tab-min-height) !important;}
+
+/*** [OSx Big Sur / Firefox 88 update] BEGIN Firefox 77 (June 2, 2020) Override URL bar enlargement. Solution from https://support.mozilla.org/en-US/questions/1289355#question-reply ***/
+
+  /* Compute new position, width, and padding */
+
+  #urlbar[breakout][breakout-extend] {
+    top: 5px !important;
+    left: 0px !important;
+    width: 100% !important;
+    padding: 0px !important;
+  }
+  /* for alternate Density settings */
+  [uidensity="compact"] #urlbar[breakout][breakout-extend] {
+    top: 3px !important;
+  }
+  [uidensity="touch"] #urlbar[breakout][breakout-extend] {
+    top: 4px !important;
+  }
+
+  /* Prevent shift of URL bar contents */
+
+  #urlbar[breakout][breakout-extend] > #urlbar-input-container {
+    height: var(--urlbar-height) !important;
+    padding: 0 !important;
+  }
+
+  /* Do not animate */
+
+  #urlbar[breakout][breakout-extend] > #urlbar-background {
+    animation: none !important;;
+  }
+
+  /* Remove shadows */
+
+  #urlbar[breakout][breakout-extend] > #urlbar-background {
+    box-shadow: none !important;
+  }
+
+/*** END Firefox 77 (June 2, 2020) Override URL bar enlargement ***/
+
+
+
+/* [OSx Big Sur / Firefox 88 update] Force black-on-white for address bar drop-down. Solution from https://support.mozilla.org/en-US/questions/1289990#question-reply*/
+.urlbarView {
+  /* Eliminate dark background outside */
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: 100% !important;
+  /* Preserve bottom border */
+  border-bottom: 1px solid
+    var(--toolbar-field-focus-border-color);
+}
+.urlbarView-body-inner, .search-one-offs {
+  /* Pure black, slightly off-white background */
+  color: #000 !important;
+  background-color: #f8f8f8 !important;
+  /* Remove extra line */
+  border-top-color: transparent !important;
+  /* Adjust distance to edges  */
+  padding: 0 6px !important;
+}
+.urlbarView-body-inner {
+  /* Fix width to avoid rows being too long */
+  width: calc(100% - 12px) !important;
+}
+
+
+/* [OSx Big Sur / Firefox 88 update] Change URLBar Properties */
+
+#urlbar[breakout][breakout-extend] #urlbar-background {
+border-color: #89b3f9 !important;
+border-width: 3px !important;
+
+}
+
+#urlbar[breakout] {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 3px !important;
+  left: 0;
+}
+
+#urlbar {
+    border: none !important;
+}
+
+#urlbar[breakout] > #urlbar-input-container
+{
+	border: none !important;
+	box-shadow: none !important;
+}
+
+#urlbar-background
+{
+	border-color: var(--lwt-toolbar-field-background-color) !important;
 }
