@@ -1,5 +1,5 @@
 /* Safari Theme for Firefox
- * https://github.com/floriandierickx/Safari-Theme-for-Firefox/ forked from https://github.com/diedummydie/Safari-Theme-for-Firefox and adapted to OSx Big Sur and Firefox 88
+ * https://github.com/diedummydie/Safari-Theme-for-Firefox with contributions of https://github.com/floriandierickx/Safari-Theme-for-Firefox/ for adaptation to OSx Big Sur and Firefox 88
  */
 
 /* https://github.com/MrOtherGuy/firefox-csshacks */
@@ -364,7 +364,7 @@ spacer {
 }
 #TabsToolbar {height: var(--tab-min-height) !important;}
 
-/*** BEGIN Firefox 77 (June 2, 2020) Override URL bar enlargement. Solution from https://support.mozilla.org/en-US/questions/1289355#question-reply ***/
+/*** [OSx Big Sur / Firefox 88 update] BEGIN Firefox 77 (June 2, 2020) Override URL bar enlargement. Solution from https://support.mozilla.org/en-US/questions/1289355#question-reply ***/
 
   /* Compute new position, width, and padding */
 
@@ -405,7 +405,7 @@ spacer {
 
 
 
-/* Force black-on-white for address bar drop-down. Solution from https://support.mozilla.org/en-US/questions/1289990#question-reply*/
+/* [OSx Big Sur / Firefox 88 update] Force black-on-white for address bar drop-down. Solution from https://support.mozilla.org/en-US/questions/1289990#question-reply*/
 .urlbarView {
   /* Eliminate dark background outside */
   margin-left: 0 !important;
@@ -430,8 +430,7 @@ spacer {
 }
 
 
-/* Change URLBar Properties */
-
+/* [OSx Big Sur / Firefox 88 update] Change URLBar Properties */
 
 #urlbar[breakout][breakout-extend] #urlbar-background {
 border-color: #89b3f9 !important;
