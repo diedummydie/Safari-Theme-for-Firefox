@@ -30,4 +30,4 @@ Switch between Light Mode and Dark Mode without editing CSS.
 
 ### Acknowledgements
 
-Made possible with advice and code examples contributed by the community of [reddit.com/r/FirefoxCSS](https://www.reddit.com/r/FirefoxCSS/), [support.mozilla.org](https://support.mozilla.org/en-US/questions/firefox), [forums.mozillazine.org](http://forums.mozillazine.org/). Files in `lib` are from [MrOtherGuy/firefox-csshacks](https://github.com/MrOtherGuy/firefox-csshacks/).
+Made possible with advice and code examples contributed by the community of [reddit.com/r/FirefoxCSS](https://www.reddit.com/r/FirefoxCSS/), [support.mozilla.org](https://support.mozilla.org/en-US/questions/firefox), [forums.mozillazine.org](http://forums.mozillazine.org/). Files in `lib` are from [MrOtherGuy/firefox-csshacks](https://github.com/MrOtherGuy/firefox-csshacks/). Updated to be compatible with OSx Big Sur 11 and Firefox 88 by [@floriandierickx](https://github.com/floriandierickx/) and [@gamunu](https://github.com/gamunu).
