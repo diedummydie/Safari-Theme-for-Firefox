@@ -21,6 +21,7 @@ Switch between Light Mode and Dark Mode without editing CSS.
 3. **Add the color themes**
    - [Safari Adaptive Light](https://addons.mozilla.org/en-US/firefox/addon/safari-adapt-light/)
    - [Safari Adaptive Dark](https://addons.mozilla.org/en-US/firefox/addon/safari-adapt-dark/)
+   - Add the extension to change Firefox's theme based on the time/system automatically [automaticDark](https://addons.mozilla.org/en-US/firefox/addon/automatic-dark/)
 
 - **Optional:**
   - Add the extension [Reload in address bar](https://addons.mozilla.org/en-US/firefox/addon/reload-in-address-bar/)
