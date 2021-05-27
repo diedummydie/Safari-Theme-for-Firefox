@@ -9,15 +9,26 @@ Switch between Light Mode and Dark Mode without editing CSS.
 ## Installation
 
 1. **Install the userChrome**
+
+   1. **Manual installation** 
+
    - Download this project with the green 'Clone or download' button above or [here](https://github.com/diedummydie/Safari-Theme-for-Firefox/archive/master.zip) (zip)
    - Open your Firefox profile folder:
      - ☰ Menu > Help > Troubleshooting Information > Profile Folder: [Show...]
    - Create a folder in your profile called `chrome` if it does not already exist
    - Copy `userChrome.css` and `lib` into that new `chrome` folder
+
+   2. **Using Installation Script**
+
+   - Download this project with the green 'Clone or download' button above or [here](https://github.com/diedummydie/Safari-Theme-for-Firefox/archive/master.zip) (zip)
+   - Open terminal in the directory of the repo, and run `bash install.sh`
+   - Follow the prompts
+
 2. **Enable userChrome**
    - Open `about:config` in the address bar
    - Set the preference `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`
    - Restart Firefox
+
 3. **Add the color themes**
    - [Safari Adaptive Light](https://addons.mozilla.org/en-US/firefox/addon/safari-adapt-light/)
    - [Safari Adaptive Dark](https://addons.mozilla.org/en-US/firefox/addon/safari-adapt-dark/)
