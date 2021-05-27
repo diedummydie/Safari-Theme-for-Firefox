@@ -369,7 +369,7 @@ spacer {
   /* Compute new position, width, and padding */
 
   #urlbar[breakout][breakout-extend] {
-    top: 5px !important;
+    top: 3px !important;
     left: 0px !important;
     width: 100% !important;
     padding: 0px !important;
@@ -399,8 +399,9 @@ spacer {
 
   #urlbar[breakout][breakout-extend] > #urlbar-background {
     box-shadow: none !important;
+    border: none !important;
   }
-
+/*focused="true" breakout-extend="true"*/
 /*** END Firefox 77 (June 2, 2020) Override URL bar enlargement ***/
 
 
@@ -459,4 +460,30 @@ border-width: 3px !important;
 #urlbar-background
 {
 	border-color: var(--lwt-toolbar-field-background-color) !important;
+}
+
+#context-navigation, #context-sep-navigation { 
+  display: none !important 
+}
+
+
+.tabbrowser-tab .tab-icon-image {
+  visibility: hidden !important;
+}
+
+#urlbar-zoom-button,
+#identity-permission-box,
+#permissions-granted-icon,
+#star-button-box {
+  display:none!important
+}
+
+.tab-icon-overlay[soundplaying] {
+  top: 0;
+}
+
+#context-sendpagetodevice, #context-sep-sendpagetodevice,
+#context-sendlinktodevice, #context-sep-sendlinktodevice,
+#context_sendTabToDevice, #context_sendTabToDevice_separator {
+  display: none !important;
 }
