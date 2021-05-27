@@ -467,10 +467,16 @@ border-width: 3px !important;
 }
 
 
+/* Hide the favicon  */
 .tabbrowser-tab .tab-icon-image {
   visibility: hidden !important;
 }
 
+/* Simplify the address bar:
+- Remove zoom
+- Remove permission granted icon
+- Remove bookmark icon
+*/
 #urlbar-zoom-button,
 #identity-permission-box,
 #permissions-granted-icon,
@@ -478,10 +484,12 @@ border-width: 3px !important;
   display:none!important
 }
 
+/* Fix the position of the sound icon when the tab plays media */
 .tab-icon-overlay[soundplaying] {
   top: 0;
 }
 
+/* Hide send page to device from the context menu */
 #context-sendpagetodevice, #context-sep-sendpagetodevice,
 #context-sendlinktodevice, #context-sep-sendlinktodevice,
 #context_sendTabToDevice, #context_sendTabToDevice_separator {
