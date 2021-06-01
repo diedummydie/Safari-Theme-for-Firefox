@@ -485,8 +485,11 @@ border-width: 3px !important;
 }
 
 /* Fix the position of the sound icon when the tab plays media */
-.tab-icon-overlay[soundplaying] {
-  top: 0;
+.tab-icon-stack[soundplaying="true"] .tab-icon-overlay[soundplaying="true"] {
+  top: 0 !important;
+}
+.tab-icon-sound {
+  margin-top: -1px !important;
 }
 
 /* Hide send page to device from the context menu */
