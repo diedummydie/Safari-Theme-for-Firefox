@@ -555,3 +555,7 @@ border-width: 3px !important;
 #pageAction-urlbar-_testpilot-containers {
   display: none !important;
 }
+.tab-icon-sound-label.tab-icon-sound-playing-label, 
+.tab-icon-sound-label.tab-icon-sound-pip-label {
+  display: none !important;
+}
