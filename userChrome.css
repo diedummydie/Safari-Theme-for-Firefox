@@ -224,13 +224,13 @@ tab:-moz-window-inactive {
   border-bottom: none !important;
 }
 
-.tabbrowser-tab .tab-close-button {
+/*.tabbrowser-tab .tab-close-button {
   -moz-box-ordinal-group: 0 !important;
   margin: 1px 6px 1px -4px !important;
   width: 16px;
   height: 16px;
   display: none !important;
-}
+}*/
 
 .tab-icon-image {
   opacity: 0.9 !important;
@@ -496,5 +496,62 @@ border-width: 3px !important;
 #context-sendpagetodevice, #context-sep-sendpagetodevice,
 #context-sendlinktodevice, #context-sep-sendlinktodevice,
 #context_sendTabToDevice, #context_sendTabToDevice_separator {
+  display: none !important;
+}
+
+
+/* FF 89 */
+.tabbrowser-tab {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  border-right: 1px solid var(--tabs-border-color) !important;
+}
+.tab-background {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  border-radius: 0 !important;
+}
+.tab-content {
+  margin-top: -2px !important;
+  padding-left: 25px !important;
+  padding-right: 0px !important;
+}
+#tabs-newtab-button {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  border-top: 1px solid var(--tabs-border-color) !important;
+}
+.tab-close-button {
+  margin-left: 0px !important;
+  visibility: hidden !important;
+  cursor: pointer !important;
+  padding: 2px !important;
+  width: 13px !important;
+  height: 13px !important;
+  border-radius: 3px !important;
+  margin-inline-end: initial !important;
+  margin-right: 10px !important;
+}
+.tabbrowser-tab:hover .tab-close-button {
+  visibility: initial !important;
+}
+.tab-label-container {
+  margin-top: -2px;
+  position: relative;
+  height:  20px !important;
+}
+.tabbrowser-tab:hover .tab-label-container {
+}
+.tab-label {
+  max-width: 100% !important;
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+}
+.tab-icon-stack {
+  display: none !important;
+}
+#pageAction-urlbar-_testpilot-containers {
   display: none !important;
 }
