@@ -6,6 +6,11 @@ Switch between Light Mode and Dark Mode without editing CSS.
 
 ![screenshot](https://raw.githubusercontent.com/diedummydie/Safari-Theme-for-Firefox/master/etc/screenshot.jpg)
 
+Comparison of Safari vs. Safari-Theme-for-Firefox 
+(notice the screen space gain! :partying_face:)
+
+![screenshot](https://i.imgur.com/r6tvfxL.png)
+
 ## Installation
 
 1. **Install the userChrome**
