@@ -224,14 +224,6 @@ tab:-moz-window-inactive {
   border-bottom: none !important;
 }
 
-/*.tabbrowser-tab .tab-close-button {
-  -moz-box-ordinal-group: 0 !important;
-  margin: 1px 6px 1px -4px !important;
-  width: 16px;
-  height: 16px;
-  display: none !important;
-}*/
-
 .tab-icon-image {
   opacity: 0.9 !important;
 }
@@ -518,6 +510,9 @@ border-width: 3px !important;
 .tabbrowser-tab[pinned] .tab-icon-stack {
   display: block !important;
 }
+.tabbrowser-tab[pinned] .tab-icon-stack .tab-icon-overlay {
+  display: none !important;
+}
 #tabs-newtab-button {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -571,4 +566,8 @@ border-width: 3px !important;
 }
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
   margin-inline-start: 0 !important;
+}
+/* Hide Rainbow bar */
+#appMenu-fxa-separator {
+  border-image: unset !important;
 }
