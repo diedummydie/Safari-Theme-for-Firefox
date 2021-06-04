@@ -81,7 +81,7 @@ tab:-moz-window-inactive {
 
 #urlbar {
   background-image: linear-gradient(#ffffff06, #00000000) !important;
-  box-shadow: inset 0 0px 0 ffffff2a !important;
+  box-shadow: inset 0 0px 0 #ffffff2a !important;
   min-height: 22px !important;
   height: 24px !important;
   margin-top: 3px !important;
@@ -570,4 +570,11 @@ border-width: 3px !important;
 /* Hide Rainbow bar */
 #appMenu-fxa-separator {
   border-image: unset !important;
+}
+/* Dropdown URL */
+.urlbarView {
+  border: 1px solid var(--tabs-border-color) !important;
+  border-radius: var(--toolbarbutton-border-radius);
+  margin-top: 5px !important;
+  box-shadow: inset 0 0px 0 #ffffff2a !important;
 }
