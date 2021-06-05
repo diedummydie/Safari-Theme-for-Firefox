@@ -81,7 +81,7 @@ tab:-moz-window-inactive {
 
 #urlbar {
   background-image: linear-gradient(#ffffff06, #00000000) !important;
-  box-shadow: inset 0 0px 0 ffffff2a !important;
+  box-shadow: inset 0 0px 0 #ffffff2a !important;
   min-height: 22px !important;
   height: 24px !important;
   margin-top: 3px !important;
@@ -89,7 +89,7 @@ tab:-moz-window-inactive {
   box-sizing: border-box;
   border: 0px #3b3b3b44 solid !important;
   border-bottom: 0px #37373744 solid !important;
-  top:;
+  top: 4px !important;
 }
 
 #urlbar:-moz-window-inactive {
@@ -104,11 +104,11 @@ tab:-moz-window-inactive {
     hsla(0, 0%, 100%, 1)
   ) !important;
   box-shadow: inset 0 1px 0 #ffffff22 !important;
-  padding: 3.25px 11px !important;
+  padding: 3.25px 9px !important;
   margin-left: 2px !important;
   margin-right: 2px !important;
   height: 24px !important;
-  width: 39px !important;
+  width: 31px !important;
   border-radius: 5px !important;
   opacity: 1 !important;
   background-clip: padding-box;
@@ -224,14 +224,6 @@ tab:-moz-window-inactive {
   border-bottom: none !important;
 }
 
-.tabbrowser-tab .tab-close-button {
-  -moz-box-ordinal-group: 0 !important;
-  margin: 1px 6px 1px -4px !important;
-  width: 16px;
-  height: 16px;
-  display: none !important;
-}
-
 .tab-icon-image {
   opacity: 0.9 !important;
 }
@@ -254,10 +246,6 @@ tab:-moz-window-inactive {
 
 .tabbrowser-tab:not([pinned="true"]):hover .tab-close-button {
   display: -moz-box !important;
-}
-
-.tab-icon-image:-moz-window-inactive {
-  opacity: 0.1 !important;
 }
 
 .tab-label-container {
@@ -369,7 +357,7 @@ spacer {
   /* Compute new position, width, and padding */
 
   #urlbar[breakout][breakout-extend] {
-    top: 5px !important;
+    top: 3px !important;
     left: 0px !important;
     width: 100% !important;
     padding: 0px !important;
@@ -399,8 +387,9 @@ spacer {
 
   #urlbar[breakout][breakout-extend] > #urlbar-background {
     box-shadow: none !important;
+    border: none !important;
   }
-
+/*focused="true" breakout-extend="true"*/
 /*** END Firefox 77 (June 2, 2020) Override URL bar enlargement ***/
 
 
@@ -442,8 +431,11 @@ border-width: 3px !important;
   display: block;
   position: absolute;
   width: 100%;
-  top: 3px !important;
   left: 0;
+}
+
+#urlbar[breakout][breakout-extend] {
+  top: 4px !important;
 }
 
 #urlbar {
@@ -459,4 +451,130 @@ border-width: 3px !important;
 #urlbar-background
 {
 	border-color: var(--lwt-toolbar-field-background-color) !important;
+}
+
+#context-navigation, #context-sep-navigation { 
+  display: none !important 
+}
+
+/* Simplify the address bar:
+- Remove zoom
+- Remove permission granted icon
+- Remove bookmark icon
+*/
+#urlbar-zoom-button,
+#identity-permission-box,
+#permissions-granted-icon,
+#star-button-box {
+  display:none!important
+}
+
+/* Fix the position of the sound icon when the tab plays media */
+.tab-icon-stack[soundplaying="true"] .tab-icon-overlay[soundplaying="true"] {
+  top: 0 !important;
+}
+.tab-icon-sound {
+  margin-top: -1px !important;
+}
+
+/* Hide send page to device from the context menu */
+#context-sendpagetodevice, #context-sep-sendpagetodevice,
+#context-sendlinktodevice, #context-sep-sendlinktodevice,
+#context_sendTabToDevice, #context_sendTabToDevice_separator {
+  display: none !important;
+}
+
+
+/* FF 89 */
+.tabbrowser-tab {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  border-right: 1px solid var(--tabs-border-color) !important;
+}
+.tab-background {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  border-radius: 0 !important;
+}
+.tab-content {
+  margin-top: -2px !important;
+  padding-left: 25px !important;
+  padding-right: 0px !important;
+}
+.tab-icon-stack {
+  display: none !important;
+}
+.tabbrowser-tab[pinned] .tab-content {
+  padding-left: 5px !important;
+}
+.tabbrowser-tab[pinned] .tab-icon-stack {
+  display: block !important;
+}
+.tabbrowser-tab[pinned] .tab-icon-stack .tab-icon-overlay {
+  display: none !important;
+}
+#tabs-newtab-button {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  border-top: 1px solid var(--tabs-border-color) !important;
+}
+.tab-close-button {
+  margin-left: 0px !important;
+  visibility: hidden !important;
+  cursor: pointer !important;
+  padding: 3px !important;
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 2px !important;
+  margin-inline-end: initial !important;
+  margin-right: 10px !important;
+}
+.tabbrowser-tab:hover .tab-close-button {
+  visibility: initial !important;
+}
+.tab-label-container {
+  margin-top: -2px;
+  position: relative;
+  height:  20px !important;
+}
+.tab-label {
+  max-width: 100% !important;
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+}
+#pageAction-urlbar-_testpilot-containers {
+  display: none !important;
+}
+.tab-icon-sound-label.tab-icon-sound-playing-label, 
+.tab-icon-sound-label.tab-icon-sound-pip-label {
+  display: none !important;
+}
+.urlbar-input-box {
+  font-size: 12px !important;
+}
+#identity-box {
+  margin-right: 0 !important;
+}
+#identity-icon {
+  width: 11px !important;
+  height: 11px !important;
+}
+#tabs-newtab-button {
+  cursor: pointer !important;
+}
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] {
+  margin-inline-start: 0 !important;
+}
+/* Hide Rainbow bar */
+#appMenu-fxa-separator {
+  border-image: unset !important;
+}
+/* Dropdown URL */
+.urlbarView {
+  border: 1px solid var(--tabs-border-color) !important;
+  border-radius: var(--toolbarbutton-border-radius);
+  margin-top: 5px !important;
+  box-shadow: inset 0 0px 0 #ffffff2a !important;
 }
